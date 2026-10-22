@@ -56,6 +56,10 @@
               <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2M8 11h8"/></svg></span>
               <span class="dd-text"><span class="dd-title">Product Images &amp; Packaging</span><span class="dd-sub">Product visuals, packaging &amp; labels</span></span>
             </a>
+            <a href="services/amazon-a-plus-design/" data-page="amazon-a-plus-design">
+              <span class="dd-icon"><img src="assets/icons/monitor.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
+              <span class="dd-text"><span class="dd-title">Amazon A+ Design</span><span class="dd-sub">Product stories &amp; listing content</span></span>
+            </a>
             <div class="dd-divider"></div>
             <a href="contact/" style="padding:8px 14px">
               <span class="dd-text"><span class="dd-title" style="color:var(--orange)">&rarr; Hire me</span><span class="dd-sub">Tell me about your project</span></span>
@@ -99,6 +103,7 @@
           <a href="services/">All services</a>
           <a href="services/ecom-ads/">Ecommerce ad creative</a>
           <a href="services/product-images-packaging-label-design/">Product images &amp; packaging</a>
+          <a href="services/amazon-a-plus-design/">Amazon A+ design</a>
           <a href="services/ghl-funnels/">GHL systems &amp; funnels</a>
           <a href="services/app-development/">App development</a>
           <a href="services/email-marketing/">Email marketing</a>
