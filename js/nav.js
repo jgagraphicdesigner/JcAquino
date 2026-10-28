@@ -348,7 +348,7 @@
     });
   }
 
-  const tiltTargets = document.querySelectorAll('.frost,.svc-card,.case-card,.pkg-card,.team-card,.signal-card,.process-step,.stat-box,.about-panel,.value');
+  const tiltTargets = document.querySelectorAll('.frost,.svc-card:not(.svc-face),.case-card,.pkg-card,.team-card,.signal-card,.process-step,.stat-box,.about-panel,.value');
   tiltTargets.forEach(el => {
     el.classList.add('html5-tilt');
     if(!Array.from(el.children).some(child => child.classList.contains('html5-glint'))){
