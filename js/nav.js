@@ -34,7 +34,7 @@
           <div class="nav-dropdown">
             <a href="services/ecom-ads/" data-page="ecom-ads">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Ecom Ad Creative</span><span class="dd-sub">Campaign visuals &amp; ad variants</span></span>
+              <span class="dd-text"><span class="dd-title">Meta Ads Creatives</span><span class="dd-sub">Campaign visuals &amp; ad variants</span></span>
             </a>
             <a href="services/ghl-funnels/" data-page="ghl-funnels">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></span>
@@ -105,7 +105,7 @@
         <nav class="footer-column" aria-label="Footer services">
           <h3>Services</h3>
           <a href="services/">All services</a>
-          <a href="services/ecom-ads/">Ecommerce ad creative</a>
+          <a href="services/ecom-ads/">Meta Ads Creatives</a>
           <a href="services/product-images-packaging-label-design/">Product listing images</a>
           <a href="services/packaging-label-design-print/">Packaging &amp; label design (print)</a>
           <a href="services/amazon-a-plus-design/">Amazon A+ design</a>
