@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>(function(){var b=document.createElement('base');b.href=location.hostname.endsWith('github.io')?'/JcAquino/':'/';document.head.appendChild(b);}());</script>
+<base href="/">
+<script>if(location.hostname.endsWith('github.io'))document.querySelector('base').href='/JcAquino/';</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Positively Geared Audiobook App | JC Aquino</title>
 <link rel="icon" href="assets/team/jc-portrait-20260512.png" type="image/png">
@@ -19,6 +20,8 @@
 .screenshot-section{background:var(--bg2)}.shot-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:24px;align-items:start;margin-top:44px}.shot-card{background:rgba(255,130,30,.06);border:1px solid var(--frost-border);border-radius:var(--radius-lg);padding:14px;overflow:hidden}.shot-card img{display:block;width:100%;height:auto;border-radius:calc(var(--radius-lg) - 8px);border:1px solid rgba(255,255,255,.08)}.shot-caption{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:0 0 12px 2px}.phone-shot{max-width:360px;margin:0 auto}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.result-card{background:var(--bg3);border:1px solid var(--frost-border);border-radius:var(--radius);padding:24px}.result-num{font-family:'Press Start 2P',monospace;font-size:18px;color:var(--orange);margin-bottom:12px}.result-title{font-weight:800;font-size:16px;margin-bottom:8px}.result-desc{font-size:13px;line-height:1.8;color:var(--white-dim)}
 @media(max-width:900px){.project-grid,.shot-grid,.result-grid{grid-template-columns:1fr}.project-hero{padding:calc(var(--nav-h) + 34px) 20px 64px !important}.detail-list div{grid-template-columns:1fr;gap:4px}.phone-shot{max-width:320px}}
 </style>
+<link rel="stylesheet" href="css/amazon-a-plus.css?v=20261022-devices">
+<link rel="stylesheet" href="css/campaign-mockups.css?v=20261029">
 </head>
 <body>
 <main>
@@ -53,12 +56,34 @@
   </div>
 </section>
 
-<section class="screenshot-section">
-  <div class="section-label reveal">Screenshots</div>
+<section id="app-preview" class="screenshot-section">
+  <div class="section-label reveal">App Preview</div>
   <h2 class="section-heading reveal">Desktop and<br><em>mobile</em><br>views.</h2>
-  <div class="shot-grid">
-    <div class="shot-card reveal"><div class="shot-caption">Desktop web app</div><img src="assets/projects/positively-geared-audiobook-desktop.png" alt="Desktop screenshot of the Positively Geared audiobook web app"></div>
-    <div class="shot-card phone-shot reveal reveal-d1"><div class="shot-caption">Mobile app view</div><img src="assets/projects/positively-geared-audiobook-mobile.png" alt="Mobile screenshot of the Positively Geared audiobook app"></div>
+  <div class="campaign-preview" data-a-plus-project data-client="Positively Geared Audiobook App">
+    <div class="campaign-preview-header">
+      <div><h3>Positively Geared Audiobook App</h3><a class="campaign-live-link" href="https://jgagraphicdesigner.github.io/app-audiobook/" target="_blank" rel="noopener">Open live app<img src="assets/icons/external-link.svg" alt="" aria-hidden="true"></a></div>
+      <div class="a-plus-controls">
+        <div class="a-plus-switch" role="group" aria-label="Audiobook app layout">
+          <button type="button" data-select-layout="desktop" aria-pressed="true" aria-controls="audiobook-app-screen"><img class="a-plus-icon" src="assets/icons/monitor.svg" alt="" aria-hidden="true">Desktop</button>
+          <button type="button" data-select-layout="mobile" aria-pressed="false" aria-controls="audiobook-app-screen"><img class="a-plus-icon" src="assets/icons/smartphone.svg" alt="" aria-hidden="true">Mobile</button>
+        </div>
+        <a class="a-plus-open" href="assets/projects/app-campaign/audiobook-desktop.webp" target="_blank" rel="noopener" aria-label="Open audiobook app desktop preview in a new tab" title="Open full preview"><img class="a-plus-icon" src="assets/icons/external-link.svg" alt="" aria-hidden="true"></a>
+      </div>
+    </div>
+    <div class="a-plus-mockup" data-device="desktop" role="group" aria-label="Positively Geared Audiobook App MacBook mockup">
+      <div class="a-plus-device">
+        <div class="a-plus-display">
+          <div class="a-plus-device-toolbar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="a-plus-device-camera" aria-hidden="true"></span>
+          <div id="audiobook-app-screen" class="a-plus-viewer" role="region" tabindex="0" aria-label="Positively Geared audiobook app desktop preview">
+            <img data-layout="desktop" src="assets/projects/app-campaign/audiobook-desktop.webp" width="1440" height="4827" alt="Current Positively Geared audiobook desktop app with a yellow hero, book cover, chapter list, offline listening options, and author section" loading="lazy" decoding="async">
+            <img data-layout="mobile" src="assets/projects/app-campaign/audiobook-mobile.webp" width="860" height="12092" alt="Current Positively Geared mobile audiobook app with the book cover, listening options, and eleven chapters" loading="lazy" decoding="async" hidden>
+          </div>
+          <div class="a-plus-device-home" aria-hidden="true"></div>
+        </div>
+        <div class="a-plus-device-base" aria-hidden="true"></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -80,5 +105,6 @@
 </section>
 </main>
 <script src="js/nav.js?v=20260508-html5-bg-v1"></script>
+<script src="js/amazon-a-plus.js?v=20261022-devices"></script>
 </body>
 </html>
