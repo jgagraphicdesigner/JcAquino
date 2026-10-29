@@ -114,6 +114,24 @@
 }
 .stat-label { font-size: 13px; line-height: 1.65; color: var(--white-dim); font-weight: 500; }
 
+/* Introduction video */
+.intro-section { border-bottom: 1px solid var(--frost-border); }
+.intro-section .section-label { justify-content: center; }
+.intro-section .section-heading { font-size: 32px; letter-spacing: 0; text-align: center; }
+.intro-section .intro-sub { max-width: 660px; margin: 18px auto 32px; font-size: 16px; line-height: 1.85; color: var(--white-dim); text-align: center; }
+.intro-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #000; border: 1px solid var(--frost-border); border-radius: 8px; cursor: auto; }
+.intro-cta { display: flex; justify-content: center; margin-top: 28px; }
+.intro-cta .btn-primary { max-width: 100%; justify-content: center; letter-spacing: 0; text-align: center; }
+body:has(.intro-video:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
+@media(max-width:640px) {
+  .intro-section .section-heading { font-size: 20px; }
+  .intro-section .intro-sub { font-size: 14px; margin-bottom: 24px; }
+  .intro-cta { margin-top: 24px; }
+}
+@media(max-width:380px) {
+  .intro-section .section-heading { font-size: 18px; }
+}
+
 /* ══════ BENTO SERVICES ══════ */
 .bento-services {
   display: grid;
@@ -405,6 +423,20 @@
     </div>
   </div>
 </div>
+
+<!-- INTRODUCTION -->
+<section class="intro-section" id="introduction" aria-labelledby="intro-heading">
+  <div class="section-label reveal">Meet Your Freelancer</div>
+  <h2 class="section-heading reveal" id="intro-heading">Meet JC Aquino.<br><em>Your creative partner.</em></h2>
+  <p class="intro-sub reveal">Get to know the freelancer behind the work and how I can support your next creative project.</p>
+  <video class="intro-video reveal" id="intro-video" controls playsinline preload="none" poster="assets/videos/jc-aquino-introduction-poster.webp" width="1920" height="1080" aria-label="JC Aquino video introduction">
+    <source src="assets/videos/jc-aquino-introduction.mp4" type="video/mp4">
+    <a href="assets/videos/jc-aquino-introduction.mp4">Watch JC Aquino's introduction video</a>
+  </video>
+  <div class="intro-cta reveal">
+    <a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" class="btn-primary" target="_blank" rel="noopener">Hire Me on Upwork &rarr;</a>
+  </div>
+</section>
 
 <!-- SERVICES -->
 <section id="services" style="max-width:100%">
