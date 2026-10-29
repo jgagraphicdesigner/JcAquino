@@ -1,0 +1,92 @@
+.campaign-preview {
+  min-width: 0;
+}
+
+.campaign-preview + .campaign-preview {
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--frost-border);
+}
+
+.campaign-preview-header,
+.campaign-preview-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.campaign-preview-header {
+  margin-top: 36px;
+}
+
+.campaign-preview h3 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.campaign-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.campaign-live-link:hover {
+  text-decoration: underline;
+}
+
+.campaign-live-link img {
+  width: 14px;
+  height: 14px;
+  filter: invert(1);
+}
+
+.campaign-hero .campaign-preview--hero {
+  justify-self: start;
+  width: min(100%, 680px);
+}
+
+.campaign-preview--hero .a-plus-mockup {
+  height: min(600px, calc((100vw - 60px) * 163.4 / 78 + 32px));
+}
+
+.campaign-preview--hero .a-plus-mockup[data-device='mobile'] .a-plus-device {
+  width: min(260px, calc(100% - 12px));
+}
+
+.campaign-preview :is(button, a):focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
+}
+
+.campaign-preview .a-plus-viewer:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: -2px;
+}
+
+@media (max-width: 1000px) {
+  .campaign-hero .campaign-preview--hero {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .campaign-preview h3 {
+    font-size: 20px;
+  }
+
+  .campaign-preview .a-plus-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
