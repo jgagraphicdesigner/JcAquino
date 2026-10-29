@@ -60,6 +60,10 @@
               <span class="dd-icon"><img src="assets/icons/monitor.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
               <span class="dd-text"><span class="dd-title">Amazon A+ Design</span><span class="dd-sub">Product stories &amp; listing content</span></span>
             </a>
+            <a href="services/packaging-label-design-print/" data-page="packaging-label-design-print">
+              <span class="dd-icon"><img src="assets/icons/printer.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
+              <span class="dd-text"><span class="dd-title">Packaging &amp; Label Design (Print)</span><span class="dd-sub">Pouches, labels &amp; print artwork</span></span>
+            </a>
             <div class="dd-divider"></div>
             <a href="contact/" style="padding:8px 14px">
               <span class="dd-text"><span class="dd-title" style="color:var(--orange)">&rarr; Hire me</span><span class="dd-sub">Tell me about your project</span></span>
@@ -103,6 +107,7 @@
           <a href="services/">All services</a>
           <a href="services/ecom-ads/">Ecommerce ad creative</a>
           <a href="services/product-images-packaging-label-design/">Product images &amp; packaging</a>
+          <a href="services/packaging-label-design-print/">Packaging &amp; label design (print)</a>
           <a href="services/amazon-a-plus-design/">Amazon A+ design</a>
           <a href="services/ghl-funnels/">GHL systems &amp; funnels</a>
           <a href="services/app-development/">App development</a>
