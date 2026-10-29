@@ -4,11 +4,11 @@
 <base href="/">
 <script>if(location.hostname.endsWith('github.io'))document.querySelector('base').href='/JcAquino/';</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work & Case Studies | | JC Aquino</title>
+<title>Projects &amp; Design Work | JC Aquino</title>
 <link rel="icon" href="assets/team/jc-portrait-20260512.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=20260508-html5-bg-v1">
+<link rel="stylesheet" href="css/main.css?v=20261029-site-refresh">
 <style>
 .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:40px}
 .filter-btn{font-size:12px;font-weight:500;padding:8px 18px;border-radius:20px;border:1px solid var(--frost-border);color:var(--white-dim);background:transparent;cursor:none;transition:all .2s}
@@ -132,14 +132,15 @@
   .metric-val{font-size:clamp(13px,4vw,16px) !important;line-height:1.35;overflow-wrap:anywhere;}
   .metric-label{font-size:10px;line-height:1.45;}
 }
+#cases-grid .case-card[hidden]{display:none!important}
 </style>
 </head>
 <body>
 <main>
 <section class="page-hero">
   <div class="page-hero-inner">
-<div class="page-hero-eyebrow">Portfolio Case Studies</div>
-  <h1>Real work.<br><em>Real results.</em><br><span class="outline">Real brands.</span></h1>
+<div class="page-hero-eyebrow">Projects &amp; Design Work</div>
+  <h1>Selected work.<br><em>Design &amp; systems.</em><br><span class="outline">Built by me.</span></h1>
   <p class="page-hero-sub">A selection of projects across ad creative, GHL systems, app development, and brand identity each one built to solve a specific business problem.</p>
   </div>
 </section>
@@ -152,6 +153,7 @@
     <button class="filter-btn" onclick="filter('ads',this)">Ad Creative</button>
     <button class="filter-btn" onclick="filter('ghl',this)">GHL / Funnels</button>
     <button class="filter-btn" onclick="filter('brand',this)">Brand Identity</button>
+    <button class="filter-btn" onclick="filter('product',this)">Product &amp; Print</button>
     <button class="filter-btn" onclick="filter('email',this)">Email Design</button>
   </div>
 
@@ -163,50 +165,50 @@
         <div class="case-title">Aus Property Professionals Project Tracker</div>
         <div class="case-tags"><span class="ctag">Team Login</span><span class="ctag">Web App</span><span class="ctag">Mobile App</span><span class="ctag">PWA</span><span class="ctag">No Monthly SaaS</span></div>
         <div class="case-desc">A private project management app created for APP's small internal team. Everyone can log in from web or mobile, manage spaces for Email, PDF, Prints, and ads, and keep work moving without paying another monthly project-management subscription.</div>
-        <span class="case-link">View case study -></span>
+        <span class="case-link">View project -></span>
         <div class="case-metrics"><div><div class="metric-val">Web</div><div class="metric-label">Desktop access</div></div><div><div class="metric-val">Mobile</div><div class="metric-label">PWA-ready app</div></div><div><div class="metric-val">No SaaS</div><div class="metric-label">No SaaS subscription</div></div></div>
       </div>
     </a>
 
 
     <a href="work/positively-geared-audiobook/" class="case-card wide reveal reveal-d1" data-cat="app" id="positively-geared-audiobook">
-      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-audiobook-thumb" src="assets/projects/positively-geared-audiobook-desktop.png" alt="Positively Geared audiobook app desktop screen"><div class="cv-badge">Lead Magnet</div></div>
+      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-audiobook-thumb" src="assets/projects/service-previews/audiobook-landing.webp" width="1440" height="900" alt="Current yellow-and-white Positively Geared audiobook app" loading="lazy" decoding="async"><div class="cv-badge">Audiobook App</div></div>
       <div class="case-content">
         <div class="case-cat">App Development · Audiobook PWA · Lead Magnet</div>
         <div class="case-title">Positively Geared Audiobook App</div>
         <div class="case-tags"><span class="ctag">Web App</span><span class="ctag">Mobile App</span><span class="ctag">Offline Listening</span><span class="ctag">PWA</span><span class="ctag">Lead Magnet</span></div>
         <div class="case-desc">I turned the Positively Geared book into an audiobook experience for Aus Property Professionals. Users can listen online from the web app or install it as a mobile app for offline listening, giving the client a stronger lead magnet and a more accessible way to share the book.</div>
-        <span class="case-link">View case study -></span>
+        <span class="case-link">View project -></span>
         <div class="case-metrics"><div><div class="metric-val">Web</div><div class="metric-label">Listening app</div></div><div><div class="metric-val">Offline</div><div class="metric-label">Mobile-ready PWA</div></div><div><div class="metric-val">Lead</div><div class="metric-label">Magnet system</div></div></div>
       </div>
     </a>
     <a href="work/aus-property-professionals-audiobook-campaign/" class="case-card wide reveal reveal-d2" data-cat="app ghl email ads" id="app-audiobook-campaign">
-      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-app-campaign-thumb" src="assets/projects/app-leadgen-landing-desktop.png" alt="Aus Property Professionals free audiobook lead generation landing page"><div class="cv-badge">Lead Gen Campaign</div></div>
+      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-app-campaign-thumb" src="assets/projects/app-campaign/landing-preview.webp" width="1440" height="1000" alt="Current Aus Property Professionals audiobook campaign landing page" loading="lazy" decoding="async"><div class="cv-badge">Campaign System</div></div>
       <div class="case-content">
         <div class="case-cat">Lead Generation · Audiobook PWA · GHL Automation · Email Nurture</div>
         <div class="case-title">Aus Property Professionals Free Audiobook Campaign</div>
         <div class="case-tags"><span class="ctag">Lead Magnet</span><span class="ctag">Landing Page</span><span class="ctag">OTP Verification</span><span class="ctag">GHL Pipeline</span><span class="ctag">6-Email Nurture</span><span class="ctag">Ad Creative</span></div>
         <div class="case-desc">A full lead generation campaign built to improve lead quality for APP: Positively Geared audiobook, conversion landing page, OTP phone verification, GHL CRM/pipeline automation, discovery-call click tracking, email nurture, and ad creatives.</div>
-        <span class="case-link">View full case study -></span>
+        <span class="case-link">View project overview -></span>
         <div class="case-metrics campaign-metrics"><div><div class="metric-val" style="font-size:clamp(13px,1.25vw,16px);line-height:1.35">Landing<br>Page</div><div class="metric-label">Lead capture</div></div><div><div class="metric-val" style="font-size:clamp(13px,1.25vw,16px);line-height:1.35">Automation</div><div class="metric-label">GHL backend</div></div><div><div class="metric-val" style="font-size:clamp(13px,1.25vw,16px);line-height:1.35">Lead<br>Magnet</div><div class="metric-label">Audiobook asset</div></div></div>
       </div>
     </a>
     <a href="work/static-ad-designs/" class="case-card reveal reveal-d1" data-cat="ads" id="static-ad-designs">
       <div class="case-visual" style="position:relative;overflow:hidden;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:18px;background:linear-gradient(135deg,var(--bg2),var(--bg3))">
         <div class="cv-glow"></div>
-        <img src="assets/projects/static-ad-designs/ecomswap/01.png?v=20260512-static-ads-fix" alt="Ecomswap static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
-        <img src="assets/projects/static-ad-designs/curosleep/01.png?v=20260512-static-ads-fix" alt="Curosleep static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
-        <img src="assets/projects/static-ad-designs/only-human/01.png?v=20260512-static-ads-fix" alt="Only Human static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
+        <img src="assets/projects/static-ad-designs/caruso/01.png?v=20261029-site-refresh" alt="Caruso Sleep+ static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
+        <img src="assets/projects/static-ad-designs/reuse-golf-balls/01.png?v=20261029-site-refresh" alt="ReUseGolfBalls static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
+        <img src="assets/projects/static-ad-designs/nu-body/03.png?v=20261029-site-refresh" alt="nu body Raspberry Fizz static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
         <img src="assets/projects/static-ad-designs/acoustica-australia/01.png" alt="Acoustica Australia static ad design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
         <div class="cv-badge">Static Ads</div>
       </div>
       <div class="case-content">
         <div class="case-cat">Ecommerce / Static Ads / Paid Social</div>
         <div class="case-title">Static Ad Designs</div>
-        <div class="case-tags"><span class="ctag">Static Ads</span><span class="ctag">10 Brands</span><span class="ctag">50 Designs</span><span class="ctag">Paid Social</span></div>
-        <div class="case-desc">A curated library of ecommerce static ad designs across Back9Lab, Curosleep, Ecomswap, Feleva, Lumiquor, MB1, Nu Body, Only Human, Simply Revival, and Acoustica Australia.</div>
-        <span class="case-link">View full case study -></span>
-        <div class="case-metrics"><div><div class="metric-val">50</div><div class="metric-label">Static ad designs</div></div><div><div class="metric-val">10</div><div class="metric-label">Brands</div></div></div>
+        <div class="case-tags"><span class="ctag">Static Ads</span><span class="ctag">13 Brands</span><span class="ctag">70 Designs</span><span class="ctag">Paid Social</span></div>
+        <div class="case-desc">A 70-design gallery across 13 brands, including the latest nu body, Caruso, ReUseGolfBalls, Lumiquor, and Acoustica Australia work.</div>
+        <span class="case-link">View project overview -></span>
+        <div class="case-metrics"><div><div class="metric-val">70</div><div class="metric-label">Static ad designs</div></div><div><div class="metric-val">13</div><div class="metric-label">Brands</div></div></div>
       </div>
     </a>
     <a href="work/relivex-ecommerce-brand/" class="case-card reveal reveal-d2" data-cat="brand ads" id="relivex-ecommerce-brand">
@@ -219,7 +221,7 @@
         <div class="case-metrics"><div><div class="metric-val">Shopify</div><div class="metric-label">Website visuals</div></div><div><div class="metric-val">5</div><div class="metric-label">Asset groups</div></div></div>
       </div>
     </a>
-    <a href="work/product-images-packaging-label-design/" class="case-card reveal reveal-d2" data-cat="brand ads" id="product-images-packaging-label-design">
+    <a href="work/product-images-packaging-label-design/" class="case-card reveal reveal-d2" data-cat="product" id="product-images-packaging-label-design">
       <div class="case-visual" style="position:relative;overflow:hidden;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:18px;background:linear-gradient(135deg,var(--bg2),var(--bg3))">
         <div class="cv-glow"></div>
         <img src="assets/projects/product-images-packaging-label-design/curosleep/04.jpg?v=20260512-product-packaging" alt="Curosleep product image design" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.08);position:relative;z-index:1">
@@ -233,14 +235,42 @@
         <div class="case-title">Product Listing Images</div>
         <div class="case-tags"><span class="ctag">Product Images</span><span class="ctag">Benefits</span><span class="ctag">Comparisons</span><span class="ctag">Ecommerce</span></div>
         <div class="case-desc">A collection of product listing images, benefit graphics, and lifestyle compositions across Curosleep, Fuel Good, Lumiquor, MB1, Mr Bugz, Puproot, and Sofyre.</div>
-        <span class="case-link">View full case study -></span>
+        <span class="case-link">View project overview -></span>
         <div class="case-metrics"><div><div class="metric-val">52</div><div class="metric-label">Listing images</div></div><div><div class="metric-val">7</div><div class="metric-label">Brands</div></div></div>
       </div>
     </a>
 
 
+    <a href="services/amazon-a-plus-design/" class="case-card reveal" data-cat="product" id="amazon-a-plus-design">
+      <div class="case-visual site-image-pair">
+        <img src="assets/projects/amazon-a-plus-design/huniihome-preview.webp" width="900" height="570" alt="Huniihome Amazon A+ product content" loading="lazy" decoding="async">
+        <img src="assets/projects/amazon-a-plus-design/pupsicle-mix-preview.webp" width="900" height="570" alt="Pupsicle Mix Amazon A+ product content" loading="lazy" decoding="async">
+      </div>
+      <div class="case-content">
+        <div class="case-cat">Amazon A+ Content</div>
+        <div class="case-title">Amazon A+ Design</div>
+        <div class="case-tags"><span class="ctag">Product Stories</span><span class="ctag">Desktop &amp; Mobile</span></div>
+        <div class="case-desc">Branded product content across Huniihome, Pupsicle Mix, nu body, and The Notting Hill, with desktop and mobile design examples.</div>
+        <span class="case-link">View design gallery -&gt;</span>
+        <div class="case-metrics"><div><div class="metric-val">4</div><div class="metric-label">Clients</div></div><div><div class="metric-val">6</div><div class="metric-label">Layout examples</div></div></div>
+      </div>
+    </a>
+    <a href="services/packaging-label-design-print/" class="case-card reveal" data-cat="product" id="packaging-label-design-print">
+      <div class="case-visual site-image-pair">
+        <img src="assets/projects/packaging-label-design-print/lumiquor-kidney-hydration/mockup-front.webp" width="1254" height="1254" alt="Lumiquor Pets packaging front mockup" loading="lazy" decoding="async">
+        <img src="assets/projects/packaging-label-design-print/sofyre-critter-control/mockup-front.webp" width="1254" height="1254" alt="SOFYRE Critter Control Spray packaging front mockup" loading="lazy" decoding="async">
+      </div>
+      <div class="case-content">
+        <div class="case-cat">Packaging &amp; Label Design (Print)</div>
+        <div class="case-title">Packaging &amp; Label Design</div>
+        <div class="case-tags"><span class="ctag">Mockups</span><span class="ctag">Print Layouts</span></div>
+        <div class="case-desc">Lumiquor Pets and SOFYRE pouch artwork, front-and-back product mockups, and measurement-and-color layout references.</div>
+        <span class="case-link">View print designs -&gt;</span>
+        <div class="case-metrics"><div><div class="metric-val">2</div><div class="metric-label">Clients</div></div><div><div class="metric-val">7</div><div class="metric-label">Project images</div></div></div>
+      </div>
+    </a>
     <a href="work/prop-moves-brand-identity/" class="case-card reveal reveal-d3" data-cat="brand" id="prop-moves-brand-identity">
-      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-propmoves-thumb" src="assets/projects/prop-moves-brand-identity.png" alt="Prop Moves brand identity station billboard mockup"><div class="cv-badge">Brand Identity</div></div>
+      <div class="case-visual" style="background:linear-gradient(135deg,var(--bg),var(--bg3))"><div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div><img class="cv-thumb is-propmoves-thumb" src="assets/projects/service-previews/prop-moves-billboard.webp" width="900" height="634" alt="Prop Moves brand identity station billboard mockup" loading="lazy" decoding="async"><div class="cv-badge">Brand Identity</div></div>
       <div class="case-content">
         <div class="case-cat">Brand Identity · Real Estate Investment</div>
         <div class="case-title">Prop Moves Brand Identity</div>
@@ -258,22 +288,19 @@
   <a href="contact/" class="btn-primary reveal"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Start a project</a>
 </section>
 </main>
-<script src="js/nav.js?v=20261029-print-service"></script>
+<script src="js/nav.js?v=20261029-site-refresh"></script>
 <script>
 function filter(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.case-card').forEach(card => {
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.classList.toggle('active', button === btn);
+    button.setAttribute('aria-pressed', String(button === btn));
+  });
+  document.querySelectorAll('#cases-grid .case-card').forEach(card => {
     const cats = (card.dataset.cat || '').split(/\s+/);
-    if(cat === 'all' || cats.includes(cat)) {
-      card.style.display = '';
-      card.style.opacity = '0';
-      setTimeout(() => card.style.opacity = '1', 10);
-    } else {
-      card.style.display = 'none';
-    }
+    card.hidden = cat !== 'all' && !cats.includes(cat);
   });
 }
+document.querySelectorAll('.filter-btn').forEach(button => button.setAttribute('aria-pressed', String(button.classList.contains('active'))));
 </script>
 </body>
 </html>

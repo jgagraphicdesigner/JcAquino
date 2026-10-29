@@ -36,6 +36,11 @@ body{
 #cursor{position:fixed;width:10px;height:10px;background:var(--orange);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 16px var(--orange),0 0 32px rgba(255,77,0,.4)}
 #cursor-ring{position:fixed;width:32px;height:32px;border:1.5px solid rgba(255,77,0,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .22s,height .22s}
 
+/* Native dialogs render above the custom cursor in the browser top layer. */
+dialog, dialog::backdrop { cursor: default; }
+dialog :is(button, a) { cursor: pointer; }
+body:has(dialog[open]) :is(#cursor, #cursor-ring) { visibility: hidden; }
+
 /* ---------- BACKGROUND TEXTURE ---------- */
 body::before{
   content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
@@ -681,8 +686,8 @@ section > *:not(.marquee-bar):not(.bento-stats):not(.hero-bg):not(.hero-wired):n
   background: #130a00;
   box-shadow: 0 24px 70px rgba(0,0,0,.42), 0 0 34px rgba(255,77,0,.16);
 }.case-visual .cv-thumb.is-app-campaign-thumb {
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center center;
   background: var(--bg2);
   box-shadow: 0 24px 70px rgba(0,0,0,.42), 0 0 34px rgba(255,77,0,.16);
 }.case-visual .cv-thumb.is-relivex-thumb {
@@ -695,8 +700,35 @@ section > *:not(.marquee-bar):not(.bento-stats):not(.hero-bg):not(.hero-wired):n
   object-position: center center;
   background: rgba(12,7,0,.72);
 }
+.case-visual .cv-thumb.is-propmoves-thumb {
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg2);
+}
+.service-work-media img.site-current-preview {
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg2);
+}
 .case-visual .cv-thumb + .cv-badge {
   z-index: 3;
+}
+.case-visual.site-image-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg2);
+}
+.site-image-pair > img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 6px;
 }
 @media(max-width:768px){
   .case-visual .cv-thumb { inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); }

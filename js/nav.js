@@ -34,7 +34,7 @@
           <div class="nav-dropdown">
             <a href="services/ecom-ads/" data-page="ecom-ads">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Ecom Ad Creative</span><span class="dd-sub">Static ads that convert</span></span>
+              <span class="dd-text"><span class="dd-title">Ecom Ad Creative</span><span class="dd-sub">Campaign visuals &amp; ad variants</span></span>
             </a>
             <a href="services/ghl-funnels/" data-page="ghl-funnels">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></span>
@@ -46,7 +46,7 @@
             </a>
             <a href="services/email-marketing/" data-page="email-marketing">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Email Marketing</span><span class="dd-sub">Campaigns that get results</span></span>
+              <span class="dd-text"><span class="dd-title">Email Marketing</span><span class="dd-sub">Branded emails &amp; nurture flows</span></span>
             </a>
             <a href="services/brand-identity/" data-page="brand-identity">
               <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></span>
@@ -54,7 +54,7 @@
             </a>
             <a href="services/product-images-packaging-label-design/" data-page="product-images-packaging-label-design">
               <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2M8 11h8"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Product Images &amp; Packaging</span><span class="dd-sub">Product visuals, packaging &amp; labels</span></span>
+              <span class="dd-text"><span class="dd-title">Product Listing Images</span><span class="dd-sub">Benefits, comparisons &amp; lifestyle</span></span>
             </a>
             <a href="services/amazon-a-plus-design/" data-page="amazon-a-plus-design">
               <span class="dd-icon"><img src="assets/icons/monitor.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
@@ -98,7 +98,7 @@
       <div class="footer-main">
         <div class="footer-brand-block">
           <a href="" class="footer-logo" aria-label="JC Aquino home"><span>JC Aquino</span></a>
-          <p>Creative and marketing partner for ecommerce brands, service businesses, and teams that need sharper design, practical systems, and measurable output.</p>
+          <p>Creative and marketing partner for ecommerce brands, service businesses, and teams that need sharper design, practical systems, and clear project deliverables.</p>
           <div class="footer-pills"><span>PH based</span><span>Global clients</span><span>Design + systems</span></div>
         </div>
 
@@ -106,7 +106,7 @@
           <h3>Services</h3>
           <a href="services/">All services</a>
           <a href="services/ecom-ads/">Ecommerce ad creative</a>
-          <a href="services/product-images-packaging-label-design/">Product images &amp; packaging</a>
+          <a href="services/product-images-packaging-label-design/">Product listing images</a>
           <a href="services/packaging-label-design-print/">Packaging &amp; label design (print)</a>
           <a href="services/amazon-a-plus-design/">Amazon A+ design</a>
           <a href="services/ghl-funnels/">GHL systems &amp; funnels</a>
