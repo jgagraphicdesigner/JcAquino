@@ -276,14 +276,30 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
 .cta-banner h2 em { color: var(--orange); font-style: normal; text-shadow: 0 0 30px rgba(255,77,0,.45); }
 .cta-sub { font-size: 15px; color: var(--white-dim); margin-bottom: 40px; font-weight: 500; }
 .cta-sub a { color: var(--orange); text-decoration: none; }
+.cta-pixel-media { display: contents; }
 
 /* RESPONSIVE */
 @media(max-width:900px){
   .hero {
-    min-height: calc(100svh - var(--nav-h));
-    justify-content: center;
-    padding: clamp(44px, 7vh, 64px) 20px clamp(56px, 8vh, 76px);
+    min-height: 0;
+    justify-content: flex-start;
+    padding: 0 20px 32px;
   }
+  .hero-bg {
+    background-image: url('assets/team/jc-home-mobile.webp');
+    background-size: auto 480px;
+    background-position: 86% top;
+    background-color: var(--bg);
+  }
+  .hero-bg::after {
+    background: linear-gradient(180deg, rgba(12,7,0,.04) 0, rgba(12,7,0,.08) 230px, var(--bg) 420px);
+  }
+  .hero-content { padding-top: 326px; }
+  .hero-eyebrow { margin-bottom: 18px; letter-spacing: .12em; }
+  .hero h1 { font-size: 28px; line-height: 1.4; letter-spacing: 0; }
+  .hero-sub { margin-top: 18px; font-size: 14px; line-height: 1.75; }
+  .hero-actions { flex-direction: row; gap: 10px; margin-top: 24px; }
+  .hero-actions a { flex: 1; min-width: 0; width: auto; padding: 14px 10px; gap: 6px; font-size: 11px; letter-spacing: 0; white-space: nowrap; }
   
 /* Full-width stats background wrapper */
 .bento-stats-wrap {
@@ -301,6 +317,9 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
   .case-card.wide { grid-template-columns: 1fr; }
   .bento-process { grid-template-columns: 1fr 1fr; }
   .cta-banner { padding: 72px 20px; }
+}
+@media(min-width:641px) and (max-width:900px){
+  .hero-bg { background-size: 100% auto; }
 }
 @media(max-width:768px){
   #work .bento-work {
@@ -804,7 +823,10 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
     <em>Brand?</em>
   </h2>
   <p class="cta-sub reveal">Ready to work together?</p>
-  <img class="cta-pixel-avatar reveal" src="assets/gifs/jc-typing.gif?v=20260512-pixel-cta" alt="JC pixel art typing animation" loading="lazy" decoding="async">
+  <picture class="cta-pixel-media">
+    <source media="(max-width: 900px)" srcset="assets/gifs/jc-typing-mobile.webp" type="image/webp">
+    <img class="cta-pixel-avatar" src="assets/gifs/jc-typing.gif?v=20260512-pixel-cta" width="640" height="640" alt="JC pixel art typing animation" loading="lazy" decoding="async">
+  </picture>
   <a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" class="btn-primary reveal" style="margin:0 auto" target="_blank" rel="noopener">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     HIRE ME
