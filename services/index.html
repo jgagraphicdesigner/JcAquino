@@ -8,13 +8,53 @@
 <link rel="icon" href="assets/team/jc-portrait-20260512.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=20261029-site-refresh">
+<link rel="stylesheet" href="css/main.css?v=20261126-live">
 <style>
 .services-hero{min-height:72vh;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:42px;align-items:center;padding:calc(var(--nav-h) + 52px) 24px 76px;position:relative;overflow:hidden;background:var(--bg)}
 .services-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(12,7,0,.96),rgba(26,14,2,.84)),radial-gradient(circle at 80% 24%,rgba(255,77,0,.14),transparent 34%),radial-gradient(circle at 16% 82%,rgba(255,77,0,.08),transparent 32%);z-index:0}.services-hero>*{position:relative;z-index:1}.services-copy{width:min(100%,560px);justify-self:end}.services-kicker{font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:24px;line-height:1.9;text-shadow:0 0 12px rgba(255,77,0,.5)}.services-hero h1{font-family:'Press Start 2P',monospace;font-size:clamp(25px,4.4vw,54px);line-height:1.5;letter-spacing:1px;margin-bottom:24px}.services-hero h1 em,.section-heading em{color:var(--orange);font-style:normal;text-shadow:0 0 22px rgba(255,77,0,.35)}.services-sub{color:var(--white-dim);font-size:16px;line-height:1.9;font-weight:500;max-width:520px}.services-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.services-panel{justify-self:start;width:min(100%,620px);background:var(--frost-bg);border:1px solid var(--frost-border);border-radius:var(--radius-lg);padding:18px;box-shadow:0 28px 90px rgba(0,0,0,.45),0 0 42px rgba(255,77,0,.06)}.service-map{display:grid;gap:10px}.service-map a{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;text-decoration:none;color:inherit;background:rgba(255,130,30,.045);border:1px solid var(--frost-border);border-radius:var(--radius);padding:16px;transition:transform .2s,border-color .2s,background .2s}.service-map a:hover{transform:translateY(-2px);border-color:var(--orange-border);background:rgba(255,77,0,.08)}.map-num{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--orange);text-shadow:0 0 12px rgba(255,77,0,.4)}.map-title{display:block;font-weight:800;font-size:15px;line-height:1.4}.map-sub{display:block;font-size:12px;color:var(--white-dim);line-height:1.6;margin-top:4px}.map-arrow{font-size:18px;color:var(--orange)}
 .service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:46px}.service-card{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;background:var(--bg3);border:1px solid var(--frost-border);border-radius:var(--radius-lg);padding:28px;text-decoration:none;color:inherit;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}.service-card:hover{transform:translateY(-4px);border-color:var(--orange-border);box-shadow:0 20px 52px rgba(0,0,0,.35),0 0 32px rgba(255,77,0,.07)}.service-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(255,77,0,.10),transparent 48%);opacity:.75;pointer-events:none}.service-card>*{position:relative;z-index:1}.service-card.featured{grid-column:1/-1;grid-template-columns:auto minmax(0,1fr) minmax(260px,.6fr);align-items:center}.service-icon{width:54px;height:54px;border:1px solid var(--orange-border);border-radius:12px;background:var(--orange-dim);display:flex;align-items:center;justify-content:center}.service-icon svg{width:24px;height:24px;stroke:var(--orange);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.service-num{font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:12px}.service-card h3{font-family:'Press Start 2P',monospace;font-size:clamp(15px,1.8vw,22px);line-height:1.55;letter-spacing:.4px;margin-bottom:12px}.service-card p{font-size:14px;line-height:1.85;color:var(--white-dim);font-weight:500}.service-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.service-tags span{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--white-dim);background:var(--white-faint);border:1px solid var(--frost-border);border-radius:999px;padding:5px 10px}.service-cta{display:inline-flex;margin-top:22px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}.service-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.proof-chip{background:rgba(255,255,255,.035);border:1px solid var(--frost-border);border-radius:var(--radius);padding:16px}.proof-chip strong{display:block;font-family:'Press Start 2P',monospace;font-size:13px;line-height:1.4;color:var(--orange);margin-bottom:8px}.proof-chip span{font-size:11px;line-height:1.55;color:var(--white-dim);font-weight:700}.process-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;margin-top:42px}.process-tile{background:var(--bg2);padding:26px 22px}.process-tile strong{font-family:'Press Start 2P',monospace;font-size:22px;color:rgba(255,77,0,.22);display:block;margin-bottom:16px}.process-tile h3{font-size:14px;margin-bottom:8px}.process-tile p{font-size:13px;line-height:1.7;color:var(--white-dim)}
 @media(max-width:1000px){.services-hero,.service-card.featured{grid-template-columns:1fr}.services-copy,.services-panel{justify-self:center}.service-proof,.bundle-grid,.process-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.services-hero{min-height:auto;padding:calc(var(--nav-h) + 38px) 20px 64px}.services-hero h1{font-size:clamp(23px,8vw,34px);line-height:1.45}.services-actions .btn-primary,.services-actions .btn-ghost{width:100%;justify-content:center}.service-grid,.process-strip{grid-template-columns:1fr}.service-card,.service-card.featured{grid-template-columns:1fr;padding:24px 20px}.service-proof{grid-template-columns:1fr}.service-map a{grid-template-columns:auto 1fr}.map-arrow{display:none}}
 .related-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:46px;max-width:1100px;margin-left:auto;margin-right:auto}.related-work-card{display:flex;min-height:190px;flex-direction:column;justify-content:space-between;gap:18px;padding:24px 22px;border:1px solid var(--frost-border);border-radius:var(--radius);background:rgba(255,130,30,.06);color:var(--white);text-decoration:none;transition:transform .24s,border-color .24s,box-shadow .24s}.related-work-card:hover{transform:translateY(-4px);border-color:var(--orange-border);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 26px rgba(255,77,0,.08)}.related-work-card span{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);line-height:1.5}.related-work-card strong{font-family:'Press Start 2P',monospace;font-size:13px;line-height:1.7;letter-spacing:.03em}.related-work-card em{font-style:normal;font-size:12px;font-weight:800;color:var(--white-dim)}@media(max-width:1100px){.related-work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.related-work-grid{grid-template-columns:1fr}.related-work-card{min-height:150px}}
+
+/* The directory uses the same group order as the home cards and navigation. */
+.services-panel .service-map { gap: 0; }
+.service-map a { border: 0; border-radius: 0; background: transparent; }
+.service-map a + a { border-top: 1px solid var(--frost-border); }
+.service-map a:hover { transform: none; }
+.service-directory-group {
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+  border-top: 1px solid var(--frost-border);
+}
+.service-directory-group + .service-directory-group { background: var(--bg2); }
+.service-directory-group .section-heading { font-size: 21px; letter-spacing: 0; overflow-wrap: anywhere; }
+.service-directory-group .service-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+.service-directory-group .service-grid-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.service-directory-group .service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 8px;
+}
+.service-directory-group .service-card > div:last-child { display: flex; flex-direction: column; flex: 1; }
+.service-directory-group .service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.service-directory-group .service-cta { gap: 8px; margin-top: auto; padding-top: 18px; }
+.service-directory-group a:focus-visible, .service-map a:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+@media (max-width: 720px) {
+  .service-directory-group .service-grid { grid-template-columns: 1fr; }
+  .service-directory-group .section-heading { font-size: 16px; }
+  .service-directory-group .service-card { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; padding: 16px; }
+  .service-directory-group .service-icon { width: 36px; height: 36px; border-radius: 8px; }
+  .service-directory-group .service-icon :is(img, svg) { width: 18px; height: 18px; }
+}
 </style>
 </head>
 <body>
@@ -30,56 +70,63 @@
     </div>
   </div>
   <div class="services-panel">
-    <div class="service-map" aria-label="All JC Aquino services">
-      <a href="services/ecom-ads/"><span class="map-num">01</span><span><span class="map-title">Meta Ads Creatives</span><span class="map-sub">Static ads, campaign visuals, testing variants</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/ghl-funnels/"><span class="map-num">02</span><span><span class="map-title">GHL Systems &amp; Funnels</span><span class="map-sub">Landing pages, CRM pipelines, automations</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/app-development/"><span class="map-num">03</span><span><span class="map-title">App Development</span><span class="map-sub">Web apps, mobile apps, internal tools</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/email-marketing/"><span class="map-num">04</span><span><span class="map-title">Email Marketing</span><span class="map-sub">Campaigns, nurture flows, HTML email systems</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/brand-identity/"><span class="map-num">05</span><span><span class="map-title">Brand Identity</span><span class="map-sub">Logos, visual systems, guidelines, collateral</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/product-images-packaging-label-design/"><span class="map-num">06</span><span><span class="map-title">Product Listing Images</span><span class="map-sub">Product benefits, comparisons, lifestyle visuals</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/amazon-a-plus-design/"><span class="map-num">07</span><span><span class="map-title">Amazon A+ Design</span><span class="map-sub">Branded modules, product stories, desktop &amp; mobile</span></span><span class="map-arrow">-&gt;</span></a>
-      <a href="services/packaging-label-design-print/"><span class="map-num">08</span><span><span class="map-title">Packaging &amp; Label Design (Print)</span><span class="map-sub">Pouches, labels, stick packaging, print layouts</span></span><span class="map-arrow">-&gt;</span></a>
-    </div>
+    <nav class="service-map" aria-label="Service groups">
+      <a href="services/#ads-ecommerce"><span class="map-num" aria-hidden="true">01</span><span><span class="map-title">Ads &amp; Ecommerce Design</span><span class="map-sub">Campaign creative and product listing content.</span></span><span class="map-arrow" aria-hidden="true">&rarr;</span></a>
+      <a href="services/#branding-packaging"><span class="map-num" aria-hidden="true">02</span><span><span class="map-title">Branding &amp; Packaging</span><span class="map-sub">Visual identities and print packaging.</span></span><span class="map-arrow" aria-hidden="true">&rarr;</span></a>
+      <a href="services/#ghl-system"><span class="map-num" aria-hidden="true">03</span><span><span class="map-title">GHL System</span><span class="map-sub">Landing pages, lead generation, AI automation, and email design.</span></span><span class="map-arrow" aria-hidden="true">&rarr;</span></a>
+    </nav>
   </div>
 </section>
 
-<section>
-  <div class="section-label reveal">01 // All Services</div>
-  <h2 class="section-heading reveal">One partner.<br><em>Eight</em><br>build paths.</h2>
+<section class="service-directory-group" id="ads-ecommerce" aria-labelledby="ads-ecommerce-title">
+  <h2 class="section-heading" id="ads-ecommerce-title">Ads &amp; Ecommerce Design</h2>
   <div class="service-grid">
-    <a href="services/ghl-funnels/" class="service-card featured reveal">
-      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
-      <div><div class="service-num">Most complete system</div><h3>GHL Systems<br>&amp; Funnels</h3><p>For brands that need the full machine: landing pages, lead capture, pipeline stages, automations, booking flows, CRM setup, and handoff systems built inside GoHighLevel.</p><div class="service-tags"><span>Landing Pages</span><span>Automation</span><span>CRM</span><span>Funnels</span></div><span class="service-cta">View service -&gt;</span></div>
-      <div class="service-proof"><div class="proof-chip"><strong>Lead</strong><span>capture system</span></div><div class="proof-chip"><strong>CRM</strong><span>pipeline build</span></div><div class="proof-chip"><strong>Auto</strong><span>follow-up flow</span></div></div>
-    </a>
-    <a href="services/ecom-ads/" class="service-card reveal reveal-d1">
+<a href="services/ecom-ads/" class="service-card">
       <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-      <div><div class="service-num">01 // Creative</div><h3>Meta Ads<br>Creatives</h3><p>Static ads for Facebook and Instagram campaigns, launches, retargeting, and product offers.</p><div class="service-tags"><span>Static Ads</span><span>Meta</span><span>A/B Variants</span></div><span class="service-cta">View service -&gt;</span></div>
+      <div><h3>Meta Ads Creatives</h3><p>Static ads for Facebook and Instagram campaigns, launches, retargeting, and product offers.</p><div class="service-tags"><span>Static Ads</span><span>Meta</span><span>A/B Variants</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
     </a>
-    <a href="services/app-development/" class="service-card reveal reveal-d2">
-      <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-      <div><div class="service-num">03 // Product</div><h3>App<br>Development</h3><p>Custom web and mobile apps for lead magnets, dashboards, project trackers, client portals, and internal tools.</p><div class="service-tags"><span>Web Apps</span><span>Mobile Apps</span><span>Internal Tools</span></div><span class="service-cta">View service -&gt;</span></div>
-    </a>
-    <a href="services/email-marketing/" class="service-card reveal reveal-d1">
-      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-      <div><div class="service-num">04 // Nurture</div><h3>Email<br>Marketing</h3><p>Branded HTML emails, nurture sequences, campaign flows, newsletter systems, and automation-ready copy structure.</p><div class="service-tags"><span>HTML Email</span><span>Nurture</span><span>Campaigns</span></div><span class="service-cta">View service -&gt;</span></div>
-    </a>
-    <a href="services/brand-identity/" class="service-card reveal reveal-d2">
-      <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></div>
-      <div><div class="service-num">05 // Identity</div><h3>Brand<br>Identity</h3><p>Logo systems, visual direction, typography, palettes, brand guidelines, and collateral that makes the brand feel built.</p><div class="service-tags"><span>Logo</span><span>Guidelines</span><span>Collateral</span></div><span class="service-cta">View service -&gt;</span></div>
-    </a>
-    <a href="services/product-images-packaging-label-design/" class="service-card reveal reveal-d1">
+<a href="services/product-images-packaging-label-design/" class="service-card">
       <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2M8 11h8"/></svg></div>
-      <div><div class="service-num">06 // Product Creative</div><h3>Product Listing<br>Images</h3><p>Ecommerce product image sets with benefit graphics, comparisons, and lifestyle compositions for online storefronts.</p><div class="service-tags"><span>Product Images</span><span>Benefits</span><span>Lifestyle</span></div><span class="service-cta">View service -&gt;</span></div>
+      <div><h3>Product Listing Images</h3><p>Ecommerce product image sets with benefit graphics, comparisons, and lifestyle compositions for online storefronts.</p><div class="service-tags"><span>Product Images</span><span>Benefits</span><span>Lifestyle</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
     </a>
-    <a href="services/amazon-a-plus-design/" class="service-card reveal reveal-d2">
+<a href="services/amazon-a-plus-design/" class="service-card">
       <div class="service-icon"><img src="assets/icons/monitor.svg" width="24" height="24" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></div>
-      <div><div class="service-num">07 // Ecommerce Content</div><h3>Amazon A+<br>Design</h3><p>Branded Amazon A+ modules with product storytelling, benefit-led imagery, and comparison layouts for desktop and mobile.</p><div class="service-tags"><span>Amazon A+</span><span>Product Stories</span><span>Desktop &amp; Mobile</span></div><span class="service-cta">View service -&gt;</span></div>
+      <div><h3>Amazon A+ Design</h3><p>Branded Amazon A+ modules with product storytelling, benefit-led imagery, and comparison layouts for desktop and mobile.</p><div class="service-tags"><span>Amazon A+</span><span>Product Stories</span><span>Desktop &amp; Mobile</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
     </a>
-    <a href="services/packaging-label-design-print/" class="service-card featured reveal">
+  </div>
+</section>
+<section class="service-directory-group" id="branding-packaging" aria-labelledby="branding-packaging-title">
+  <h2 class="section-heading" id="branding-packaging-title">Branding &amp; Packaging</h2>
+  <div class="service-grid service-grid-pair">
+<a href="services/brand-identity/" class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></div>
+      <div><h3>Brand Identity</h3><p>Logo systems, visual direction, typography, palettes, brand guidelines, and collateral that makes the brand feel built.</p><div class="service-tags"><span>Logo</span><span>Guidelines</span><span>Collateral</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+<a href="services/packaging-label-design-print/" class="service-card">
       <div class="service-icon"><img src="assets/icons/printer.svg" width="24" height="24" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></div>
-      <div><div class="service-num">08 // Print Design</div><h3>Packaging &amp;<br>Label Design (Print)</h3><p>Packaging and label layouts for physical products, with coordinated front-and-back artwork, pouch and stick formats, and presentation mockups.</p><div class="service-tags"><span>Print Artwork</span><span>Packaging</span><span>Labels</span></div><span class="service-cta">View service -&gt;</span></div>
-      <img src="assets/projects/packaging-label-design-print/lumiquor-kidney-hydration/mockup-front.webp" width="1254" height="1254" alt="Lumiquor Pets pouch and stick packaging design" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:300px;border-radius:8px">
+      <div><h3>Packaging &amp; Label Design (Print)</h3><p>Packaging and label layouts for physical products, with coordinated front-and-back artwork, pouch and stick formats, and presentation mockups.</p><div class="service-tags"><span>Print Artwork</span><span>Packaging</span><span>Labels</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
+
+    </a>
+  </div>
+</section>
+<section class="service-directory-group" id="ghl-system" aria-labelledby="ghl-system-title">
+  <h2 class="section-heading" id="ghl-system-title">GHL System</h2>
+  <div class="service-grid service-grid-pair">
+    <a href="services/ghl-funnels/#landing-page" class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+      <div><h3>Landing Page</h3><p>Design and build GoHighLevel landing pages around a specific offer, signup, or booking.</p><div class="service-tags"><span>GoHighLevel</span><span>Funnels</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+    <a href="services/ghl-funnels/#lead-generation" class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div><h3>Lead Generation</h3><p>Lead magnets and opt-in flows that capture enquiries and connect them to your CRM.</p><div class="service-tags"><span>Lead Capture</span><span>CRM</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+    <a href="services/ghl-funnels/#ai-automation" class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <div><h3>AI Automation</h3><p>Connect your GHL workflows and use AI where it fits, such as organizing enquiries or drafting follow-ups for review.</p><div class="service-tags"><span>Workflows</span><span>Follow-up</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+    <a href="services/email-marketing/" class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div><h3>Email Design</h3><p>Branded HTML emails for campaigns, newsletters, and nurture sequences.</p><div class="service-tags"><span>HTML Email</span><span>Nurture</span><span>Campaigns</span></div><span class="service-cta">View service <span aria-hidden="true">&rarr;</span></span></div>
     </a>
   </div>
 </section>
@@ -87,25 +134,22 @@
   <div class="section-label reveal">02 // Related Work</div>
   <h2 class="section-heading reveal">Jump from<br><em>service</em><br>to proof.</h2>
   <div class="related-work-grid">
-    <a href="services/packaging-label-design-print/" class="related-work-card reveal">
+    <a href="services/packaging-label-design-print/#lumiquor-kidney-hydration" class="related-work-card reveal">
       <span>Lumiquor Pets &amp; SOFYRE</span><strong>Packaging &amp; Label Design</strong><em>View print designs -&gt;</em>
     </a>
-    <a href="services/amazon-a-plus-design/#huniihome" class="related-work-card reveal">
-      <span>Amazon A+ Content</span><strong>A+ Design Across Four Brands</strong><em>View client designs -&gt;</em>
+    <a href="work/carnivore-amazon-redesign/" class="related-work-card reveal">
+      <span>Amazon A+ &amp; Listing Images</span><strong>Carnivore Amazon Redesign</strong><em>View before &amp; after &rarr;</em>
     </a>
-    <a href="work/static-ad-designs/" class="related-work-card reveal">
+    <a href="work/static-ad-designs/#nu-body" class="related-work-card reveal">
       <span>Meta Ads Creatives</span><strong>Static Ad Designs</strong><em>View Meta Ads Design -&gt;</em>
     </a>
-    <a href="work/product-images-packaging-label-design/" class="related-work-card reveal reveal-d1">
+    <a href="work/product-images-packaging-label-design/#fuel-good" class="related-work-card reveal reveal-d1">
       <span>Product Creative</span><strong>Product Listing Images</strong><em>View project -&gt;</em>
     </a>
     <a href="work/aus-property-professionals-audiobook-campaign/" class="related-work-card reveal reveal-d1">
-      <span>GHL / Funnels</span><strong>APP Audiobook Campaign</strong><em>View project -&gt;</em>
+      <span>GHL / Funnels</span><strong>Positively Geared Book Funnel</strong><em>View project -&gt;</em>
     </a>
-    <a href="work/aus-property-professionals-project-tracker/" class="related-work-card reveal reveal-d2">
-      <span>App Development</span><strong>APP Project Tracker</strong><em>View project -&gt;</em>
-    </a>
-    <a href="work/aus-property-professionals-audiobook-campaign/" class="related-work-card reveal reveal-d1">
+    <a href="work/aus-property-professionals-audiobook-campaign/#email-marketing" class="related-work-card reveal reveal-d1">
       <span>Email Marketing</span><strong>Email Nurture Flow</strong><em>View project -&gt;</em>
     </a>
     <a href="work/prop-moves-brand-identity/" class="related-work-card reveal reveal-d2">
@@ -131,6 +175,6 @@
   <a href="contact/" class="btn-primary reveal"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Start a project</a>
 </section>
 </main>
-<script src="js/nav.js?v=20261029-meta-ads"></script>
+<script src="js/nav.js?v=20261126-live"></script>
 </body>
 </html>

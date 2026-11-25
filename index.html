@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=20261029-site-refresh">
+<link rel="stylesheet" href="css/main.css?v=20261126-live">
 <style>
 /* ══════ HERO ══════ */
 .hero {
@@ -82,18 +82,14 @@
 }
 
 .bento-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   background: rgba(255,255,255,0.06);
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
 .stat-box {
-  flex: 1;
   background: var(--bg2); padding: 36px 20px;
   position: relative; overflow: hidden; transition: background .25s;
   border-right: 1px solid rgba(255,255,255,0.06);
@@ -144,14 +140,16 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
   .intro-play:hover { transform: none; }
 }
 
-/* ══════ BENTO SERVICES ══════ */
+/* Service cards */
+#services { scroll-margin-top: var(--nav-h); }
 .bento-services {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 16px; margin-top: 52px;
 }
-.svc-card.third  { grid-column: span 2; }
-.svc-card.half   { grid-column: span 3; }
+@media (max-width: 900px) {
+  .bento-services { grid-template-columns: 1fr; }
+}
 .svc-card {
   background: var(--frost-bg); border: 1px solid var(--frost-border);
   border-radius: var(--radius-lg); padding: 32px 28px;
@@ -170,7 +168,11 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
 }
 .svc-card:hover::before { opacity: 1; }
 .svc-card.wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+@media (max-width: 900px) {
+  .svc-card.wide { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}
 .svc-amazon-preview { width:100%; height:auto; aspect-ratio:30/19; object-fit:contain; border-radius:8px; display:block; }
+#service-sample-amazon .svc-project-media img { object-fit: contain; object-position: center; }
 .svc-icon {
   width: 42px; height: 42px; margin-bottom: 20px;
   border: 1px solid var(--orange-border); border-radius: 10px;
@@ -309,10 +311,9 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.bento-stats { flex-wrap: wrap; }
-  .stat-box { flex: 1 1 calc(50% - 1px); border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .bento-services { grid-template-columns: 1fr; }
-  .svc-card.wide { grid-template-columns: 1fr; }
+  .stat-box { padding: 18px 8px; }
+  .stat-num { font-size: 18px; }
+  .stat-label { font-size: 11px; }
   .bento-work { grid-template-columns: 1fr; }
   .case-card.wide { grid-template-columns: 1fr; }
   .bento-process { grid-template-columns: 1fr 1fr; }
@@ -384,7 +385,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
   font-size: clamp(13px, 1.25vw, 16px);
   line-height: 1.35;
 }</style>
-<link rel="stylesheet" href="css/service-flips.css?v=20261028">
+<link rel="stylesheet" href="css/service-flips.css?v=20261126-live">
 </head>
 <body>
 <main>
@@ -399,7 +400,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
       Systems.
       <span class="lo">Launch.</span>
     </h1>
-    <p class="hero-sub">Meta Ads creatives, product listing images, print packaging design, GHL funnel builds, and custom web apps for brands that refuse to blend in.</p>
+    <p class="hero-sub">Meta Ads creatives, product listing images, print packaging design, and GoHighLevel systems for brands that refuse to blend in.</p>
     <div class="hero-actions">
       <a href="work/" class="btn-primary">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -417,7 +418,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
     <span class="dot">●</span><span>GHL Funnels</span>
     <span class="dot">●</span><span>Landing Pages</span>
     <span class="dot">●</span><span>Email Marketing</span>
-    <span class="dot">●</span><span>App Development</span>
+    <span class="dot">●</span><span>AI Automation</span>
     <span class="dot">●</span><span>Lead Generation</span>
     <span class="dot">●</span><span>Static Ad Creative</span>
     <span class="dot">●</span><span>Brand Systems</span>
@@ -425,7 +426,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
     <span class="dot">●</span><span>GHL Funnels</span>
     <span class="dot">●</span><span>Landing Pages</span>
     <span class="dot">●</span><span>Email Marketing</span>
-    <span class="dot">●</span><span>App Development</span>
+    <span class="dot">●</span><span>AI Automation</span>
     <span class="dot">●</span><span>Lead Generation</span>
     <span class="dot">●</span><span>Static Ad Creative</span>
     <span class="dot">●</span><span>Brand Systems</span>
@@ -445,10 +446,6 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
       <div class="stat-label">Ad creatives produced and tested</div>
     </div>
     <div class="stat-box reveal reveal-d3">
-      <div class="stat-num" data-target="4" data-suffix="+">0+</div>
-      <div class="stat-label">Web &amp; mobile apps created</div>
-    </div>
-    <div class="stat-box reveal reveal-d4">
       <div class="stat-num" data-target="30" data-suffix="+">0+</div>
       <div class="stat-label">Landing pages published</div>
     </div>
@@ -478,7 +475,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
 <section id="services" style="max-width:100%">
   <div style="max-width:900px;margin:0 auto"><div class="section-label reveal">01 // Services</div>
   <h2 class="section-heading reveal">What I<br><em>Build</em><br>For You</h2>
-  <p class="reveal" style="max-width:520px;color:var(--white-dim);font-size:14px;line-height:1.9;margin-top:12px;font-weight:500">Eight focused build paths, one creative partner. From the first product visual to the closed deal.</p>
+  <p class="reveal" style="max-width:520px;color:var(--white-dim);font-size:14px;line-height:1.9;margin-top:12px;font-weight:500">Seven focused build paths, one creative partner. From the first product visual to the closed deal.</p>
 
   <div class="bento-services" style="max-width:900px;margin:0 auto">
     <article class="svc-flip-card reveal reveal-d1" data-service-flip data-service="Meta Ads Creatives" aria-label="Meta Ads Creatives">
@@ -497,41 +494,41 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
       </a>
       <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Meta Ads Creatives" aria-controls="service-sample-ads" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
-    <article class="svc-flip-card reveal reveal-d2" data-service-flip data-service="GHL Systems and Funnels" aria-label="GHL Systems and Funnels">
+    <article class="svc-flip-card reveal reveal-d2" data-service-flip data-service="GHL System" aria-label="GHL System">
     <a href="services/ghl-funnels/" class="svc-card svc-face svc-front">
       <div class="svc-num">// 02</div>
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-      <div class="svc-title">GHL Systems<br>&amp; Funnels</div>
-      <div class="svc-desc">Complete done-for-you GoHighLevel setups. Landing pages, automations, CRM wired together.</div>
-      <div class="svc-tags"><span class="tag">GoHighLevel</span><span class="tag">Funnels</span><span class="tag">Automation</span></div>
+      <div class="svc-title">GHL<br>System</div>
+      <div class="svc-desc">GoHighLevel setups for landing pages, lead generation, and AI-assisted follow-up.</div>
+      <div class="svc-tags"><span class="tag">GoHighLevel</span><span class="tag">Lead Generation</span><span class="tag">AI Automation</span></div>
       <div class="svc-arrow">View service →</div>
     </a>
       <a id="service-sample-ghl" class="svc-card svc-face svc-back" href="work/aus-property-professionals-audiobook-campaign/" aria-hidden="true" inert hidden>
         <span class="svc-sample-label">Selected project</span>
-        <div class="svc-project-media"><img src="assets/projects/app-campaign/landing-preview.webp" width="1440" height="1000" alt="Current Aus Property Professionals audiobook campaign landing page" loading="lazy" decoding="async"></div>
-        <div class="svc-project-copy"><h3 class="svc-project-name">APP Audiobook Funnel</h3><p class="svc-project-type">Lead capture, GHL automation, and nurture.</p><span class="svc-arrow">View project &rarr;</span></div>
+        <div class="svc-project-media"><img src="assets/projects/positively-geared-funnel/book-preview.webp" width="1440" height="1000" alt="Current Positively Geared free paperback landing page" loading="lazy" decoding="async"></div>
+        <div class="svc-project-copy"><h3 class="svc-project-name">Positively Geared Book Funnel</h3><p class="svc-project-type">Landing pages, purchase tags, and order follow-up.</p><span class="svc-arrow">View project &rarr;</span></div>
       </a>
-      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: GHL Systems and Funnels" aria-controls="service-sample-ghl" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
+      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: GHL System" aria-controls="service-sample-ghl" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
-    <article class="svc-flip-card reveal reveal-d3" data-service-flip data-service="App Development" aria-label="App Development">
-    <a href="services/app-development/" class="svc-card svc-face svc-front">
-      <div class="svc-num">// 03</div>
-      <div class="svc-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-      <div class="svc-title">App<br>Development</div>
-      <div class="svc-desc">Fast-built web apps and SaaS tools. Shipped weeks faster than traditional dev cycles.</div>
-      <div class="svc-tags"><span class="tag">PWA</span><span class="tag">Firebase</span><span class="tag">SaaS</span></div>
-      <div class="svc-arrow">View service →</div>
-    </a>
-      <a id="service-sample-app" class="svc-card svc-face svc-back" href="work/aus-property-professionals-project-tracker/" aria-hidden="true" inert hidden>
-        <span class="svc-sample-label">Selected project</span>
-        <div class="svc-project-media is-dark"><img src="assets/projects/service-previews/app-tracker.webp" width="900" height="546" alt="APP project tracker desktop and mobile app screens" loading="lazy" decoding="async"></div>
-        <div class="svc-project-copy"><h3 class="svc-project-name">APP Project Tracker</h3><p class="svc-project-type">A shared workspace for web and mobile.</p><span class="svc-arrow">View project &rarr;</span></div>
+    <article class="svc-flip-card reveal reveal-d3" data-service-flip data-service="Packaging and Label Design (Print)" aria-label="Packaging and Label Design (Print)">
+      <a href="services/packaging-label-design-print/" class="svc-card svc-face svc-front">
+        <div class="svc-num">// 03</div>
+        <div class="svc-icon"><img src="assets/icons/printer.svg" width="18" height="18" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></div>
+        <div class="svc-title">Packaging &amp;<br>Label Design</div>
+        <div class="svc-desc">Pouches, labels, and single-serve packaging with coordinated front-and-back artwork and detailed print layout references.</div>
+        <div class="svc-tags"><span class="tag">Print Artwork</span><span class="tag">Packaging</span><span class="tag">Labels</span></div>
+        <div class="svc-arrow">View service &rarr;</div>
       </a>
-      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: App Development" aria-controls="service-sample-app" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
+      <a id="service-sample-print" class="svc-card svc-face svc-back" href="services/packaging-label-design-print/#lumiquor-kidney-hydration" aria-hidden="true" inert hidden>
+        <span class="svc-sample-label">Selected project</span>
+        <div class="svc-project-media" style="display:flex;align-items:center;background:transparent"><img src="assets/projects/packaging-label-design-print/lumiquor-kidney-hydration/mockup-front.webp" width="1254" height="1254" alt="Front of the Lumiquor Pets pouch and matching single-serve stick" loading="lazy" decoding="async" style="height:auto;max-height:100%;object-fit:contain;object-position:center"></div>
+        <div class="svc-project-copy"><h3 class="svc-project-name">Lumiquor Pets</h3><p class="svc-project-type">Kidney + Hydration Lickables. Pouch and stick artwork, mockups, and layout sheets.</p><span class="svc-arrow">View project &rarr;</span></div>
+      </a>
+      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Packaging and Label Design (Print)" aria-controls="service-sample-print" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
     <article class="svc-flip-card reveal reveal-d1" data-service-flip data-service="Brand Identity" aria-label="Brand Identity">
     <a href="services/brand-identity/" class="svc-card svc-face svc-front">
-      <div class="svc-num">// 05</div>
+      <div class="svc-num">// 04</div>
       <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></div>
       <div class="svc-title">Brand Identity</div>
       <div class="svc-desc">Logos, color systems, typography, mascots, and brand guidelines built to make your brand impossible to ignore.</div>
@@ -545,12 +542,12 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
       </a>
       <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Brand Identity" aria-controls="service-sample-brand" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
-    <article class="svc-flip-card reveal reveal-d2" data-service-flip data-service="Email Marketing Design" aria-label="Email Marketing Design">
+    <article class="svc-flip-card reveal reveal-d2" data-service-flip data-service="Email Design" aria-label="Email Design">
     <a href="services/email-marketing/" class="svc-card svc-face svc-front">
       <div>
-        <div class="svc-num">// 04</div>
+        <div class="svc-num">// 05</div>
         <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        <div class="svc-title">Email Marketing Design</div>
+        <div class="svc-title">Email Design</div>
         <div class="svc-desc">Branded HTML campaigns that land in inboxes and drive real action. Follow-up sequences, newsletters, nurture campaigns.</div>
       </div>
       <div>
@@ -563,7 +560,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
         <div class="svc-project-media"><img src="assets/projects/service-previews/app-email.webp" width="640" height="758" alt="APP Positively Geared audiobook delivery email design" loading="lazy" decoding="async"></div>
         <div class="svc-project-copy"><h3 class="svc-project-name">APP Email Nurture</h3><p class="svc-project-type">Branded emails for the audiobook campaign.</p><span class="svc-arrow">View project &rarr;</span></div>
       </a>
-      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Email Marketing Design" aria-controls="service-sample-email" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
+      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Email Design" aria-controls="service-sample-email" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
     <article class="svc-flip-card reveal reveal-d3" data-service-flip data-service="Product Listing Images" aria-label="Product Listing Images">
     <a href="services/product-images-packaging-label-design/" class="svc-card svc-face svc-front">
@@ -590,32 +587,14 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
         <div class="svc-tags"><span class="tag">Amazon A+</span><span class="tag">Product Stories</span><span class="tag">Desktop &amp; Mobile</span></div>
         <div class="svc-arrow">View service &rarr;</div>
       </div>
-      <img class="svc-amazon-preview" src="assets/projects/amazon-a-plus-design/huniihome-preview.webp" width="900" height="570" alt="Huniihome campfire playset Amazon A+ design by JC Aquino" loading="lazy" decoding="async">
+      <img class="svc-amazon-preview" src="assets/projects/carnivore-amazon/final-20261120/a-plus-feature.webp" width="1000" height="410" alt="Carnivore Electrolytes final Premium A+ opener with the product jar and sachets" loading="lazy" decoding="async">
     </a>
-      <a id="service-sample-amazon" class="svc-card svc-face svc-back" href="services/amazon-a-plus-design/#huniihome" aria-hidden="true" inert hidden>
+      <a id="service-sample-amazon" class="svc-card svc-face svc-back" href="work/carnivore-amazon-redesign/#a-plus-content" aria-hidden="true" inert hidden>
         <span class="svc-sample-label">Selected project</span>
-        <div class="svc-project-media"><picture><source media="(max-width:900px)" srcset="assets/projects/service-previews/huniihome-mobile.webp"><img src="assets/projects/amazon-a-plus-design/huniihome-preview.webp" width="900" height="570" alt="Huniihome campfire playset Amazon A+ content design" loading="lazy" decoding="async"></picture></div>
-        <div class="svc-project-copy"><h3 class="svc-project-name">Huniihome</h3><p class="svc-project-type">Amazon A+ content for an imaginative play brand, with desktop and mobile layouts.</p><span class="svc-arrow">View project &rarr;</span></div>
+        <div class="svc-project-media is-dark"><img src="assets/projects/carnivore-amazon/final-20261120/a-plus-feature.webp" width="1000" height="410" alt="Carnivore Electrolytes final Premium A+ opener with the product jar and sachets" loading="lazy" decoding="async"></div>
+        <div class="svc-project-copy"><h3 class="svc-project-name">Carnivore Electrolytes</h3><p class="svc-project-type">Final desktop and mobile Premium A+ artwork with product positioning, customer context, comparison modules, and detailed FAQs.</p><span class="svc-arrow">View before &amp; after &rarr;</span></div>
       </a>
       <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Amazon A+ Design" aria-controls="service-sample-amazon" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
-    </article>
-    <article class="svc-flip-card is-wide reveal" data-service-flip data-service="Packaging and Label Design (Print)" aria-label="Packaging and Label Design (Print)">
-      <a href="services/packaging-label-design-print/" class="svc-card svc-face svc-front wide">
-        <div>
-          <div class="svc-num">// 08</div>
-          <div class="svc-title">Packaging &amp;<br>Label Design (Print)</div>
-          <div class="svc-desc">Pouches, labels, and single-serve packaging with coordinated front-and-back artwork and detailed print layout references.</div>
-          <div class="svc-tags"><span class="tag">Print Artwork</span><span class="tag">Packaging</span><span class="tag">Labels</span></div>
-          <div class="svc-arrow">View service &rarr;</div>
-        </div>
-        <img class="svc-print-preview" src="assets/projects/packaging-label-design-print/lumiquor-kidney-hydration/mockup-front.webp" width="1254" height="1254" alt="Lumiquor Pets Kidney + Hydration pouch and stick packaging front" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:8px">
-      </a>
-      <a id="service-sample-print" class="svc-card svc-face svc-back" href="services/packaging-label-design-print/#lumiquor-kidney-hydration" aria-hidden="true" inert hidden>
-        <span class="svc-sample-label">Selected project</span>
-        <div class="svc-project-media" style="display:flex;align-items:center;background:transparent"><img src="assets/projects/packaging-label-design-print/lumiquor-kidney-hydration/mockup-back.webp" width="1254" height="1254" alt="Back of the Lumiquor Pets pouch and matching single-serve stick" loading="lazy" decoding="async" style="height:auto;max-height:100%;object-fit:contain;object-position:center"></div>
-        <div class="svc-project-copy"><h3 class="svc-project-name">Lumiquor Pets</h3><p class="svc-project-type">Kidney + Hydration Lickables. Pouch and stick artwork, mockups, and layout sheets.</p><span class="svc-arrow">View project &rarr;</span></div>
-      </a>
-      <button class="svc-flip-toggle" type="button" aria-label="Show sample project: Packaging and Label Design (Print)" aria-controls="service-sample-print" aria-pressed="false" title="Show sample project" hidden><img src="assets/icons/rotate-ccw.svg" alt="" aria-hidden="true"></button>
     </article>
   </div>
   </div>
@@ -631,52 +610,21 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
       <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))">
         <div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div>
         <div class="cv-grid"></div>
-        <img class="cv-thumb is-app-campaign-thumb" src="assets/projects/app-campaign/landing-preview.webp" alt="Current Aus Property Professionals free audiobook campaign landing page" loading="lazy" decoding="async">
+        <img class="cv-thumb is-app-campaign-thumb" src="assets/projects/positively-geared-funnel/book-preview.webp" alt="Current Positively Geared free paperback offer landing page" loading="lazy" decoding="async">
         <div class="cv-badge">Lead Gen Campaign</div>
       </div>
       <div class="case-content">
-        <div class="case-cat">// Lead Gen · GHL · Email Nurture</div>
-        <div class="case-title">APP Free Audiobook Campaign</div>
-        <div class="case-desc">A complete campaign system for better lead quality: audiobook lead magnet, landing page, OTP phone verification, GHL pipeline automation, email nurture, and ad creatives.</div>
+        <div class="case-cat">// Landing Pages · GHL · Order Follow-Up</div>
+        <div class="case-title">Positively Geared Book Funnel</div>
+        <div class="case-desc">The free paperback offer, discovery-call page, booking confirmation, and two GHL workflows for postage-only and upgraded orders. With original workflow screenshots and campaign creative.</div>
         <div class="case-metrics campaign-metrics">
-          <div><div class="metric-val">Landing<br>Page</div><div class="metric-label">Lead capture</div></div>
-          <div><div class="metric-val">Automation</div><div class="metric-label">GHL backend</div></div>
-          <div><div class="metric-val">Lead<br>Magnet</div><div class="metric-label">Audiobook asset</div></div>
+          <div><div class="metric-val">3 Pages</div><div class="metric-label">Connected journey</div></div>
+          <div><div class="metric-val">GHL</div><div class="metric-label">Automation</div></div>
+          <div><div class="metric-val">2 Flows</div><div class="metric-label">Order follow-up</div></div>
         </div>
       </div>
     </a>
 
-    <a href="work/aus-property-professionals-project-tracker/" class="case-card wide reveal reveal-d1">
-      <div class="case-visual" style="background:linear-gradient(135deg,#130a00,#1a0e02)">
-        <div class="cv-glow"></div>
-        <div class="cv-grid"></div>
-        <img class="cv-thumb is-tracker-thumb" src="assets/projects/app-tracker-showcase.png?v=20260510-tracker-main-dashboard" alt="APP Project Management web and mobile app screens">
-        <div class="cv-badge">Internal Team App</div>
-      </div>
-      <div class="case-content">
-        <div class="case-cat">// App Dev · Project Management · PWA</div>
-        <div class="case-title">Aus Property Professionals Project Tracker</div>
-        <div class="case-desc">A web and mobile project management app for APP's small internal team, built so everyone can log in, manage work by space, and avoid paying another monthly software subscription.</div>
-        <div class="case-metrics">
-          <div><div class="metric-val">Web</div><div class="metric-label">Desktop access</div></div>
-          <div><div class="metric-val">Mobile</div><div class="metric-label">PWA-ready app</div></div>
-          <div><div class="metric-val">No SaaS</div><div class="metric-label">No SaaS subscription</div></div>
-        </div>
-      </div>
-    </a>
-    <a href="work/positively-geared-audiobook/" class="case-card wide reveal reveal-d2">
-      <div class="case-visual" style="background:var(--bg2)">
-        <img class="cv-thumb is-audiobook-thumb" src="assets/projects/service-previews/audiobook-landing.webp" width="1440" height="900" alt="Current Positively Geared audiobook app with its yellow-and-white landing page" loading="lazy" decoding="async">
-        <div class="cv-badge">Audiobook App</div>
-      </div>
-      <div class="case-content">
-        <div class="case-cat">// App Development &middot; Audiobook PWA</div>
-        <div class="case-title">Positively Geared Audiobook App</div>
-        <div class="case-desc">A web and mobile listening experience with chapter navigation, online playback, and offline-ready PWA functionality.</div>
-        <span class="case-link">View app overview -&gt;</span>
-        <div class="case-metrics"><div><div class="metric-val">Web</div><div class="metric-label">Listening app</div></div><div><div class="metric-val">PWA</div><div class="metric-label">Mobile access</div></div></div>
-      </div>
-    </a>
     <a href="work/prop-moves-brand-identity/" class="case-card wide reveal reveal-d2" id="prop-moves-brand-identity-home">
       <div class="case-visual" style="background:linear-gradient(135deg,var(--bg2),var(--bg3))">
         <div class="cv-glow" style="background:radial-gradient(circle,rgba(255,77,0,0.12) 0%,transparent 65%)"></div>
@@ -730,17 +678,16 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
         <div class="case-metrics"><div><div class="metric-val">52</div><div class="metric-label">Listing images</div></div><div><div class="metric-val">7</div><div class="metric-label">Brands</div></div></div>
       </div>
     </a>
-    <a href="services/amazon-a-plus-design/" class="case-card reveal">
+    <a href="work/carnivore-amazon-redesign/" class="case-card reveal">
       <div class="case-visual site-image-pair">
-        <img src="assets/projects/amazon-a-plus-design/huniihome-preview.webp" width="900" height="570" alt="Huniihome Amazon A+ product content" loading="lazy" decoding="async">
-        <img src="assets/projects/amazon-a-plus-design/pupsicle-mix-preview.webp" width="900" height="570" alt="Pupsicle Mix Amazon A+ product content" loading="lazy" decoding="async">
+        <img src="assets/projects/carnivore-amazon/final-20261120/listing-01-preview.webp" width="800" height="800" alt="Final Carnivore Electrolytes listing image showing the product jar and sachets" loading="lazy" decoding="async">
+        <img src="assets/projects/carnivore-amazon/final-20261120/a-plus-feature.webp" width="1000" height="410" alt="Carnivore Electrolytes final Premium A+ opener with the product jar and sachets" loading="lazy" decoding="async">
       </div>
       <div class="case-content">
-        <div class="case-cat">// Amazon A+ Content</div>
-        <div class="case-title">Amazon A+ Design</div>
-        <div class="case-desc">Product stories, benefit modules, and comparison layouts for Huniihome, Pupsicle Mix, nu body, and The Notting Hill.</div>
-        <span class="case-link">View design gallery -&gt;</span>
-        <div class="case-metrics"><div><div class="metric-val">4</div><div class="metric-label">Clients</div></div><div><div class="metric-val">6</div><div class="metric-label">Desktop &amp; mobile layouts</div></div></div>
+        <div class="case-cat">// Featured Amazon Project</div>
+        <div class="case-title">Carnivore Amazon Redesign</div>
+        <div class="case-desc">A new Amazon listing image set and A+ layout for Carnivore Electrolytes, shown alongside the AI-generated originals.</div>
+        <span class="case-link">View before &amp; after &rarr;</span>
       </div>
     </a>
     <a href="services/packaging-label-design-print/" class="case-card reveal">
@@ -808,7 +755,7 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
   <div class="bento-process reveal">
     <div class="process-step"><div class="step-num">01</div><div class="step-title">Discovery call</div><div class="step-desc">Intro session. I align on goals, audience, and what success looks like.</div></div>
     <div class="process-step"><div class="step-num">02</div><div class="step-title">Clear proposal</div><div class="step-desc">Exact deliverables and timeline sent within 24 hours. No surprises.</div></div>
-    <div class="process-step"><div class="step-num">03</div><div class="step-title">Build &amp; review</div><div class="step-desc">Updates at every stage. You review via a dedicated tracker with direct feedback.</div></div>
+    <div class="process-step"><div class="step-num">03</div><div class="step-title">Build &amp; review</div><div class="step-desc">Updates at every stage. You review each draft with clear feedback and approval points.</div></div>
     <div class="process-step"><div class="step-num">04</div><div class="step-title">Deliver &amp; launch</div><div class="step-desc">Clean handoff with all source files, walkthrough call, and post-launch support.</div></div>
   </div>
 </section>
@@ -834,8 +781,8 @@ body:has(.intro-player:hover) :is(#cursor, #cursor-ring) { visibility: hidden; }
 </section>
 
 </main>
-<script src="js/nav.js?v=20261029-meta-ads"></script>
-<script src="js/service-flips.js?v=20261028"></script>
-<script src="js/intro-video.js?v=20261029"></script>
+<script src="js/nav.js?v=20261126-live"></script>
+<script src="js/service-flips.js?v=20261126-live"></script>
+<script src="js/intro-video.js?v=20261126-live"></script>
 </body>
 </html>

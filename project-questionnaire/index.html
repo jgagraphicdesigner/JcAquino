@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/">
+<script>if(location.hostname.endsWith('github.io'))document.querySelector('base').href='/JcAquino/';</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Tell JC Aquino about your product, brand, audience, and next creative project.">
+<title>Product &amp; Brand Questionnaire | JC Aquino</title>
+<link rel="icon" href="assets/team/jc-portrait-20260512.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css?v=20261126-live">
+<link rel="stylesheet" href="css/questionnaire.css?v=20261126-live">
+<script src="js/questionnaire-config.js?v=20261126-live" defer></script>
+<script src="js/questionnaire.js?v=20261126-live" defer></script>
+<script src="js/nav.js?v=20261126-live" defer></script>
+</head>
+<body class="questionnaire-body">
+<main class="questionnaire-page">
+  <section class="questionnaire-intro" aria-labelledby="questionnaire-title">
+    <div>
+      <div class="section-label">Let's build your next project</div>
+      <h1 id="questionnaire-title">Product &amp; Brand<br><em>Questionnaire</em></h1>
+      <p>A little context makes a better creative brief. Share your product, your audience, and what you need before I start.</p>
+      <div class="questionnaire-meta"><span>About 10 minutes</span><span>5 sections</span><span>JC Aquino</span></div>
+      <p class="questionnaire-delivery" data-delivery-status>Local preview. Email delivery is not connected.</p>
+    </div>
+  </section>
+
+  <section class="questionnaire-workspace" aria-label="Product and brand questionnaire">
+    <div class="questionnaire-layout">
+      <aside class="questionnaire-sidebar">
+        <nav aria-label="Questionnaire steps" class="questionnaire-step-nav" hidden>
+          <ol>
+            <li><button type="button" data-step-link="0" aria-current="step"><span class="step-number">01</span><span>Amazon account</span></button></li>
+            <li><button type="button" data-step-link="1" disabled><span class="step-number">02</span><span>The basics</span></button></li>
+            <li><button type="button" data-step-link="2" disabled><span class="step-number">03</span><span>Your product</span></button></li>
+            <li><button type="button" data-step-link="3" disabled><span class="step-number">04</span><span>Your customers</span></button></li>
+            <li><button type="button" data-step-link="4" disabled><span class="step-number">05</span><span>Project details</span></button></li>
+          </ol>
+        </nav>
+        <div class="questionnaire-person">
+          <img src="assets/team/jc-portrait-20260512.png" width="56" height="56" alt="JC Aquino" decoding="async">
+          <div><strong>JC Aquino</strong><span>Your creative partner</span></div>
+        </div>
+      </aside>
+
+      <div class="questionnaire-main" id="questionnaire-start">
+        <noscript><p class="questionnaire-notice">JavaScript is required to complete this form. Please email your project details to <a href="mailto:jgagraphicdesigner@gmail.com">jgagraphicdesigner@gmail.com</a>.</p></noscript>
+        <div class="questionnaire-progress" hidden>
+          <div><span data-step-status>Step 1 of 5</span><span data-progress-label>Amazon account</span></div>
+          <progress max="5" value="1" aria-label="Questionnaire progress"></progress>
+        </div>
+        <div class="questionnaire-errors" id="questionnaire-errors" role="alert" hidden></div>
+        <form id="questionnaire-form" method="post" action="project-questionnaire/#questionnaire-start">
+          <div class="questionnaire-honeypot" aria-hidden="true">
+            <label for="questionnaire-website">Leave this field empty</label>
+            <input id="questionnaire-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <fieldset class="questionnaire-step" data-step="0">
+            <legend><span class="questionnaire-kicker">01 // Getting started</span><span class="questionnaire-step-title" tabindex="-1">Your Amazon account</span></legend>
+            <p class="questionnaire-step-copy">This helps me understand which Amazon content options are available to your brand.</p>
+            <fieldset class="questionnaire-choice-group">
+              <legend>Is your brand Brand Registered on Amazon? <span class="required-mark" aria-hidden="true">*</span></legend>
+              <div class="questionnaire-options">
+                <label><input type="radio" name="brand_registration" value="Yes" required><span>Yes</span></label>
+                <label><input type="radio" name="brand_registration" value="No"><span>No</span></label>
+                <label><input type="radio" name="brand_registration" value="Not sure"><span>Not sure</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="questionnaire-choice-group">
+              <legend>Do you have Premium A+ unlocked? <span class="required-mark" aria-hidden="true">*</span></legend>
+              <div class="questionnaire-options">
+                <label><input type="radio" name="premium_a_plus" value="Yes" required><span>Yes</span></label>
+                <label><input type="radio" name="premium_a_plus" value="No"><span>No</span></label>
+                <label><input type="radio" name="premium_a_plus" value="Not sure"><span>Not sure</span></label>
+              </div>
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="questionnaire-step" data-step="1">
+            <legend><span class="questionnaire-kicker">02 // A proper introduction</span><span class="questionnaire-step-title" tabindex="-1">The basics</span></legend>
+            <div class="questionnaire-fields">
+              <div class="questionnaire-field">
+                <label for="client-name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input id="client-name" name="name" autocomplete="name" maxlength="120" required>
+              </div>
+              <div class="questionnaire-field">
+                <label for="client-email">Contact email <span class="required-mark" aria-hidden="true">*</span></label>
+                <input id="client-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+              </div>
+              <div class="questionnaire-field">
+                <label for="brand-name">Brand name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input id="brand-name" name="brand_name" autocomplete="organization" maxlength="180" required>
+              </div>
+              <div class="questionnaire-field">
+                <label for="product-name">Product name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input id="product-name" name="product_name" maxlength="180" required>
+              </div>
+              <div class="questionnaire-field">
+                <label for="brand-website">Brand website URL <span class="optional-mark">Optional</span></label>
+                <input id="brand-website" name="brand_website" type="url" inputmode="url" placeholder="https://" maxlength="500">
+              </div>
+              <div class="questionnaire-field">
+                <label for="amazon-listing">Amazon listing URL or ASIN <span class="optional-mark">Optional</span></label>
+                <input id="amazon-listing" name="amazon_listing" maxlength="500">
+              </div>
+              <div class="questionnaire-field questionnaire-full">
+                <label for="marketplace">Marketplace region <span class="required-mark" aria-hidden="true">*</span></label>
+                <input id="marketplace" name="marketplace" maxlength="160" placeholder="For example: US, UK, CA" required>
+              </div>
+              <div class="questionnaire-field questionnaire-full">
+                <label for="social-links">Social media links <span class="optional-mark">Optional</span></label>
+                <p class="questionnaire-help" id="social-help">Instagram, Facebook, TikTok, LinkedIn, or other brand channels.</p>
+                <textarea id="social-links" name="social_links" rows="3" maxlength="3000" aria-describedby="social-help"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="questionnaire-step" data-step="2">
+            <legend><span class="questionnaire-kicker">03 // What makes it different</span><span class="questionnaire-step-title" tabindex="-1">Tell me about your product</span></legend>
+            <div class="questionnaire-field">
+              <label for="product-problem">What is this product and what problem does it solve? <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea id="product-problem" name="product_problem" rows="4" maxlength="5000" required></textarea>
+            </div>
+            <div class="questionnaire-field">
+              <label for="differentiator">What genuinely sets yours apart from everything else in the market? <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea id="differentiator" name="differentiator" rows="4" maxlength="5000" required></textarea>
+            </div>
+            <fieldset class="questionnaire-choice-group questionnaire-usps">
+              <legend>What are your top 3-5 unique selling points?</legend>
+              <div class="questionnaire-field"><label for="usp-1">Selling point 1 <span class="required-mark" aria-hidden="true">*</span></label><input id="usp-1" name="usp_1" maxlength="600" required></div>
+              <div class="questionnaire-field"><label for="usp-2">Selling point 2 <span class="required-mark" aria-hidden="true">*</span></label><input id="usp-2" name="usp_2" maxlength="600" required></div>
+              <div class="questionnaire-field"><label for="usp-3">Selling point 3 <span class="required-mark" aria-hidden="true">*</span></label><input id="usp-3" name="usp_3" maxlength="600" required></div>
+              <div class="questionnaire-field"><label for="usp-4">Selling point 4 <span class="optional-mark">Optional</span></label><input id="usp-4" name="usp_4" maxlength="600"></div>
+              <div class="questionnaire-field"><label for="usp-5">Selling point 5 <span class="optional-mark">Optional</span></label><input id="usp-5" name="usp_5" maxlength="600"></div>
+            </fieldset>
+            <div class="questionnaire-field">
+              <label for="evidence">Which of these USPs have third-party backing? <span class="optional-mark">Optional</span></label>
+              <p class="questionnaire-help" id="evidence-help">Certifications, lab tests, awards, or other independent proof. Include links when available.</p>
+              <textarea id="evidence" name="third_party_evidence" rows="4" maxlength="5000" aria-describedby="evidence-help"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="questionnaire-step" data-step="3">
+            <legend><span class="questionnaire-kicker">04 // The people behind the purchase</span><span class="questionnaire-step-title" tabindex="-1">Who are you selling to?</span></legend>
+            <div class="questionnaire-field">
+              <label for="ideal-customer">Who is your ideal customer? <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea id="ideal-customer" name="ideal_customer" rows="4" maxlength="5000" required></textarea>
+            </div>
+            <div class="questionnaire-field">
+              <label for="not-for">Who is this product not for? <span class="optional-mark">Optional</span></label>
+              <textarea id="not-for" name="not_for" rows="3" maxlength="3000"></textarea>
+            </div>
+            <div class="questionnaire-field">
+              <label for="objection">What is the single biggest objection a customer has before buying? <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea id="objection" name="biggest_objection" rows="3" maxlength="3000" required></textarea>
+            </div>
+            <fieldset class="questionnaire-choice-group">
+              <legend>Your best customer reviews <span class="optional-mark">Optional</span></legend>
+              <p class="questionnaire-help">Paste 3-5 reviews exactly as written, including dates when available. New product? Leave these blank.</p>
+              <div class="questionnaire-field"><label for="review-1">Review 1</label><textarea id="review-1" name="customer_review_1" rows="3" maxlength="6000"></textarea></div>
+              <div class="questionnaire-field"><label for="review-2">Review 2</label><textarea id="review-2" name="customer_review_2" rows="3" maxlength="6000"></textarea></div>
+              <div class="questionnaire-field"><label for="review-3">Review 3</label><textarea id="review-3" name="customer_review_3" rows="3" maxlength="6000"></textarea></div>
+              <details class="questionnaire-extra-reviews"><summary>Reviews 4 &amp; 5 <span class="optional-mark">Optional</span></summary>
+                <div class="questionnaire-field"><label for="review-4">Review 4</label><textarea id="review-4" name="customer_review_4" rows="3" maxlength="6000"></textarea></div>
+                <div class="questionnaire-field"><label for="review-5">Review 5</label><textarea id="review-5" name="customer_review_5" rows="3" maxlength="6000"></textarea></div>
+              </details>
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="questionnaire-step" data-step="4">
+            <legend><span class="questionnaire-kicker">05 // The creative brief</span><span class="questionnaire-step-title" tabindex="-1">Project details</span></legend>
+            <fieldset class="questionnaire-choice-group">
+              <legend>What do you need? <span class="required-mark" aria-hidden="true">*</span></legend>
+              <div class="questionnaire-options questionnaire-checks" data-required-options="services" role="group" aria-describedby="services-help">
+                <label><input type="checkbox" name="services" value="Main images"><span>Main images</span></label>
+                <label><input type="checkbox" name="services" value="Gallery / infographics"><span>Gallery / infographics</span></label>
+                <label><input type="checkbox" name="services" value="A+ / Premium A+"><span>A+ / Premium A+</span></label>
+                <label><input type="checkbox" name="services" value="Brand story"><span>Brand story</span></label>
+                <label><input type="checkbox" name="services" value="Packaging / label"><span>Packaging / label</span></label>
+                <label><input type="checkbox" name="services" value="Meta ads"><span>Meta ads</span></label>
+              </div>
+              <p class="questionnaire-help" id="services-help">Select at least one.</p>
+            </fieldset>
+            <fieldset class="questionnaire-choice-group">
+              <legend>Brand assets available <span class="optional-mark">Optional</span></legend>
+              <div class="questionnaire-options questionnaire-checks">
+                <label><input type="checkbox" name="brand_assets" value="Logo files"><span>Logo files</span></label>
+                <label><input type="checkbox" name="brand_assets" value="Brand guidelines"><span>Brand guidelines</span></label>
+                <label><input type="checkbox" name="brand_assets" value="Product photos"><span>Product photos</span></label>
+                <label><input type="checkbox" name="brand_assets" value="Packaging die-lines"><span>Packaging die-lines</span></label>
+              </div>
+            </fieldset>
+            <div class="questionnaire-field">
+              <label for="asset-links">Brand asset links <span class="optional-mark">Optional</span></label>
+              <p class="questionnaire-help" id="assets-help">Google Drive, Dropbox, or other shared folders. Make sure JC has permission to view the files.</p>
+              <textarea id="asset-links" name="asset_links" rows="3" maxlength="5000" aria-describedby="assets-help"></textarea>
+            </div>
+            <div class="questionnaire-field">
+              <label for="competitors">Competitors you admire or compete with <span class="optional-mark">Optional</span></label>
+              <p class="questionnaire-help" id="competitors-help">Amazon listings or website links, with any notes.</p>
+              <textarea id="competitors" name="competitor_links" rows="3" maxlength="5000" aria-describedby="competitors-help"></textarea>
+            </div>
+            <div class="questionnaire-field">
+              <label for="deadline">Preferred deadline <span class="optional-mark">Optional</span></label>
+              <input id="deadline" name="deadline" type="date">
+            </div>
+            <div class="questionnaire-field">
+              <label for="additional-notes">Anything else I should know? <span class="optional-mark">Optional</span></label>
+              <textarea id="additional-notes" name="additional_notes" rows="4" maxlength="5000"></textarea>
+            </div>
+          </fieldset>
+
+          <section class="questionnaire-review" aria-labelledby="questionnaire-review-title" hidden>
+            <span class="questionnaire-kicker">One last look</span>
+            <h2 id="questionnaire-review-title" tabindex="-1">Your project brief</h2>
+            <div data-review-answers></div>
+            <label class="questionnaire-consent"><input type="checkbox" id="questionnaire-consent" name="consent" value="I agree to share these project details with JC Aquino for project planning and follow-up."><span>I agree to share these project details with JC Aquino for project planning and follow-up. <span class="required-mark" aria-hidden="true">*</span></span></label>
+            <p class="questionnaire-privacy" data-processing-note>Preview only: nothing is emailed or saved to browser storage. Please don't include passwords, payment details, or account access.</p>
+            <button type="button" class="questionnaire-text-button" data-download><img src="assets/icons/download.svg" width="16" height="16" alt=""> Download answers</button>
+          </section>
+
+          <div class="questionnaire-actions" hidden>
+            <button type="button" class="questionnaire-secondary" data-back hidden><img src="assets/icons/chevron-left.svg" width="18" height="18" alt=""> Back</button>
+            <span class="questionnaire-required">* Required</span>
+            <button type="submit" class="questionnaire-primary" data-next disabled><span>Continue</span><img src="assets/icons/chevron-right.svg" width="18" height="18" alt=""></button>
+          </div>
+        </form>
+
+        <section class="questionnaire-complete" aria-labelledby="questionnaire-complete-title" hidden>
+          <div class="questionnaire-kicker" data-complete-label>Local preview</div>
+          <h2 id="questionnaire-complete-title" tabindex="-1">Preview complete.</h2>
+          <p data-complete-message>No answers were emailed. The form is ready for review; email delivery still needs to be connected.</p>
+          <div class="questionnaire-complete-actions">
+            <button type="button" class="questionnaire-primary" data-download><img src="assets/icons/download.svg" width="16" height="16" alt=""> Download answers</button>
+            <button type="button" class="questionnaire-secondary" data-return-review>Back to review</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

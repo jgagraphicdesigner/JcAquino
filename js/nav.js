@@ -28,46 +28,59 @@
       <ul class="nav-center" id="nav-menu">
         <li><a href="" data-page="home">Home</a></li>
         <li class="has-dropdown" id="services-menu">
-          <button data-page="services">Services
+          <button type="button" data-page="services" aria-controls="service-dropdown" aria-expanded="false">Services
             <svg class="nav-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4l4 4 4-4"/></svg>
           </button>
-          <div class="nav-dropdown">
-            <a href="services/ecom-ads/" data-page="ecom-ads">
-              <span class="dd-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Meta Ads Creatives</span><span class="dd-sub">Campaign visuals &amp; ad variants</span></span>
-            </a>
-            <a href="services/ghl-funnels/" data-page="ghl-funnels">
-              <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></span>
-              <span class="dd-text"><span class="dd-title">GHL Systems & Funnels</span><span class="dd-sub">Done-for-you GHL setups</span></span>
-            </a>
-            <a href="services/app-development/" data-page="app-development">
-              <span class="dd-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
-              <span class="dd-text"><span class="dd-title">App Development</span><span class="dd-sub">Custom web apps & SaaS</span></span>
-            </a>
-            <a href="services/email-marketing/" data-page="email-marketing">
-              <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Email Marketing</span><span class="dd-sub">Branded emails &amp; nurture flows</span></span>
-            </a>
-            <a href="services/brand-identity/" data-page="brand-identity">
-              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Brand Identity</span><span class="dd-sub">Logos, systems & guidelines</span></span>
-            </a>
-            <a href="services/product-images-packaging-label-design/" data-page="product-images-packaging-label-design">
-              <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2M8 11h8"/></svg></span>
-              <span class="dd-text"><span class="dd-title">Product Listing Images</span><span class="dd-sub">Benefits, comparisons &amp; lifestyle</span></span>
-            </a>
-            <a href="services/amazon-a-plus-design/" data-page="amazon-a-plus-design">
-              <span class="dd-icon"><img src="assets/icons/monitor.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
-              <span class="dd-text"><span class="dd-title">Amazon A+ Design</span><span class="dd-sub">Product stories &amp; listing content</span></span>
-            </a>
-            <a href="services/packaging-label-design-print/" data-page="packaging-label-design-print">
-              <span class="dd-icon"><img src="assets/icons/printer.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
-              <span class="dd-text"><span class="dd-title">Packaging &amp; Label Design (Print)</span><span class="dd-sub">Pouches, labels &amp; print artwork</span></span>
-            </a>
-            <div class="dd-divider"></div>
-            <a href="contact/" style="padding:8px 14px">
-              <span class="dd-text"><span class="dd-title" style="color:var(--orange)">&rarr; Hire me</span><span class="dd-sub">Tell me about your project</span></span>
-            </a>
+          <div class="nav-dropdown" id="service-dropdown" inert>
+            <div class="dd-group" role="group" aria-labelledby="nav-ads-ecommerce">
+              <span class="dd-group-title" id="nav-ads-ecommerce">Ads &amp; Ecommerce Design</span>
+              <a href="services/ecom-ads/" data-page="ecom-ads">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                <span class="dd-title">Meta Ads Creatives</span>
+              </a>
+              <a href="services/product-images-packaging-label-design/" data-page="product-images-packaging-label-design">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2M8 11h8"/></svg></span>
+                <span class="dd-title">Product Listing Images</span>
+              </a>
+              <a href="services/amazon-a-plus-design/" data-page="amazon-a-plus-design">
+                <span class="dd-icon"><img src="assets/icons/monitor.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
+                <span class="dd-title">Amazon A+ Design</span>
+              </a>
+            </div>
+            <div class="dd-group" role="group" aria-labelledby="nav-branding-packaging">
+              <span class="dd-group-title" id="nav-branding-packaging">Branding &amp; Packaging</span>
+              <a href="services/brand-identity/" data-page="brand-identity">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></span>
+                <span class="dd-title">Brand Identity</span>
+              </a>
+              <a href="services/packaging-label-design-print/" data-page="packaging-label-design-print">
+                <span class="dd-icon"><img src="assets/icons/printer.svg" width="14" height="14" alt="" style="filter:invert(37%) sepia(100%) saturate(3800%) hue-rotate(2deg) brightness(105%) contrast(104%)"></span>
+                <span class="dd-title">Packaging &amp; Label Design (Print)</span>
+              </a>
+            </div>
+            <div class="dd-group" role="group" aria-labelledby="nav-ghl-system">
+              <span class="dd-group-title" id="nav-ghl-system">GHL System</span>
+              <a href="services/ghl-funnels/#landing-page">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></span>
+                <span class="dd-title">Landing Page</span>
+              </a>
+              <a href="services/ghl-funnels/#lead-generation">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                <span class="dd-title">Lead Generation</span>
+              </a>
+              <a href="services/ghl-funnels/#ai-automation">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+                <span class="dd-title">AI Automation</span>
+              </a>
+              <a href="services/email-marketing/" data-page="email-marketing">
+                <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <span class="dd-title">Email Design</span>
+              </a>
+            </div>
+            <div class="dd-actions">
+              <a href="services/">All services &rarr;</a>
+              <a href="contact/">Hire me &rarr;</a>
+            </div>
           </div>
         </li>
         <li><a href="about/" data-page="about">About</a></li>
@@ -75,7 +88,7 @@
         <li><a href="process/" data-page="process">Process</a></li>
         <li><a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" class="nav-cta" data-page="contact" target="_blank" rel="noopener">Hire me &rarr;</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-controls="nav-menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -90,7 +103,7 @@
         <div>
           <div class="footer-eyebrow">// Ready when you are</div>
           <h2>Let's build the next system that moves your brand.</h2>
-          <p>Ad creative, funnels, brand identity, and custom apps shaped into one clear growth path.</p>
+          <p>Ad creative, branding, packaging, and GoHighLevel systems for your next project.</p>
         </div>
         <a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" class="footer-action" target="_blank" rel="noopener">Hire me on Upwork -&gt;</a>
       </section>
@@ -109,9 +122,8 @@
           <a href="services/product-images-packaging-label-design/">Product listing images</a>
           <a href="services/packaging-label-design-print/">Packaging &amp; label design (print)</a>
           <a href="services/amazon-a-plus-design/">Amazon A+ design</a>
-          <a href="services/ghl-funnels/">GHL systems &amp; funnels</a>
-          <a href="services/app-development/">App development</a>
-          <a href="services/email-marketing/">Email marketing</a>
+          <a href="services/#ghl-system">GHL System</a>
+          <a href="services/email-marketing/">Email Design</a>
           <a href="services/brand-identity/">Brand identity</a>
         </nav>
 
@@ -120,12 +132,13 @@
           <a href="about/">About</a>
           <a href="work/">Work</a>
           <a href="process/">Process</a>
+          <a href="project-questionnaire/">Project questionnaire</a>
           <a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" target="_blank" rel="noopener">Hire me</a>
         </nav>
 
         <div class="footer-column footer-contact-block">
           <h3>Start here</h3>
-          <p>Have a campaign, funnel, app, or identity system to build? Send the details and I'll map the cleanest next step.</p>
+          <p>Have a campaign, funnel, or identity system to build? Send the details and I'll map the cleanest next step.</p>
           <a href="https://www.upwork.com/freelancers/jovenchrisaquino?mp_source=share" class="footer-contact-link" target="_blank" rel="noopener">Hire me -&gt;</a>
         </div>
       </div>
@@ -144,46 +157,61 @@
     if(cur===p||(p==='services'&&inSub)){el.classList.add('active-page');el.closest('li')?.classList.add('active')}
   });
 
-  /* Dropdown */
-  const dd=document.getElementById('services-menu');
-  if(dd){
-    const ddButton = dd.querySelector('button');
-    const hoverDropdown = window.matchMedia('(hover: hover) and (pointer: fine)');
-    const mobileDropdown = () => window.matchMedia('(max-width: 768px)').matches || document.getElementById('nav-menu')?.classList.contains('mobile-open');
-    ddButton.addEventListener('click',e=>{
-      e.preventDefault();
-      e.stopPropagation();
-      dd.classList.toggle('open');
-    });
-    document.addEventListener('click',()=>dd.classList.remove('open'));
-    let ddTimer;
-    dd.addEventListener('mouseenter',()=>{
-      if(!hoverDropdown.matches || mobileDropdown()) return;
-      clearTimeout(ddTimer);
-      dd.classList.add('open');
-    });
-    dd.addEventListener('mouseleave',()=>{
-      if(!hoverDropdown.matches || mobileDropdown()) return;
-      ddTimer=setTimeout(()=>dd.classList.remove('open'),180);
-    });
-  }
-
-  /* Hamburger */
+  /* Services disclosure and mobile navigation */
+  const dd = document.getElementById('services-menu');
+  const ddButton = dd.querySelector('button');
+  const dropdown = document.getElementById('service-dropdown');
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('nav-menu');
-  if(hamburger) {
-    hamburger.addEventListener('click', e => {
-      e.stopPropagation();
-      hamburger.classList.toggle('open');
-      navMenu.classList.toggle('mobile-open');
-    });
-    document.addEventListener('click', e => {
-      if(!e.target.closest('#site-nav')) {
-        hamburger.classList.remove('open');
-        navMenu.classList.remove('mobile-open');
-      }
-    });
+  const mobileNav = window.matchMedia('(max-width: 900px)');
+  const hoverDropdown = window.matchMedia('(hover: hover) and (pointer: fine)');
+  let ddTimer;
+
+  function setDropdown(open) {
+    clearTimeout(ddTimer);
+    dd.classList.toggle('open', open);
+    ddButton.setAttribute('aria-expanded', String(open));
+    dropdown.inert = !open;
   }
+
+  function setMobileMenu(open) {
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+    navMenu.classList.toggle('mobile-open', open);
+    if (!open) setDropdown(false);
+  }
+
+  ddButton.addEventListener('click', () => setDropdown(!dd.classList.contains('open')));
+  dd.addEventListener('mouseenter', () => {
+    if (hoverDropdown.matches && !mobileNav.matches) setDropdown(true);
+  });
+  dd.addEventListener('mouseleave', () => {
+    if (hoverDropdown.matches && !mobileNav.matches && !dd.contains(document.activeElement)) {
+      ddTimer = setTimeout(() => setDropdown(false), 180);
+    }
+  });
+  dd.addEventListener('focusout', event => {
+    if (!dd.contains(event.relatedTarget)) setDropdown(false);
+  });
+  hamburger.addEventListener('click', () => setMobileMenu(!navMenu.classList.contains('mobile-open')));
+  navMenu.addEventListener('click', event => {
+    if (mobileNav.matches && event.target.closest('a')) setMobileMenu(false);
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('#site-nav')) setMobileMenu(false);
+    else if (!dd.contains(event.target)) setDropdown(false);
+  });
+  mobileNav.addEventListener('change', () => setMobileMenu(false));
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !event.target.closest('#site-nav')) return;
+    if (dd.classList.contains('open')) {
+      setDropdown(false);
+      ddButton.focus();
+    } else if (navMenu.classList.contains('mobile-open')) {
+      setMobileMenu(false);
+      hamburger.focus();
+    }
+  });
 
   /* Scroll */
   const nav=document.getElementById('site-nav');
@@ -231,127 +259,131 @@
   window.addEventListener('scroll', updateProgress, {passive:true});
   window.addEventListener('resize', updateProgress, {passive:true});
 
-  const canvas = document.createElement('canvas');
-  canvas.className = 'html5-stage';
-  canvas.setAttribute('aria-hidden', 'true');
-  document.body.insertBefore(canvas, document.body.firstChild);
-  const ctx = canvas.getContext('2d');
-  const pointer = { x: window.innerWidth * .68, y: window.innerHeight * .38, active: false };
-  let dpr = 1;
-  let particles = [];
-  let frameId = 0;
+  function mountCanvasFallback(){
+    const canvas = document.createElement('canvas');
+    canvas.className = 'html5-stage';
+    canvas.setAttribute('aria-hidden', 'true');
+    document.body.insertBefore(canvas, document.body.firstChild);
+    const ctx = canvas.getContext('2d');
+    const pointer = { x: window.innerWidth * .68, y: window.innerHeight * .38, active: false };
+    let dpr = 1;
+    let particles = [];
+    let frameId = 0;
 
-  function makeParticles(){
-    const area = window.innerWidth * window.innerHeight;
-    const total = Math.max(34, Math.min(92, Math.round(area / 22000)));
-    particles = Array.from({length: total}, (_, i) => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      vx: (Math.random() - .5) * .22,
-      vy: (Math.random() - .5) * .18,
-      size: i % 7 === 0 ? 3 : 2,
-      phase: Math.random() * Math.PI * 2
-    }));
-  }
-
-  function resizeCanvas(){
-    if(!ctx) return;
-    dpr = Math.min(window.devicePixelRatio || 1, 1.75);
-    canvas.width = Math.floor(window.innerWidth * dpr);
-    canvas.height = Math.floor(window.innerHeight * dpr);
-    canvas.style.width = window.innerWidth + 'px';
-    canvas.style.height = window.innerHeight + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    makeParticles();
-    if(reduceMotion) drawStage(0);
-  }
-
-  function drawGrid(ts){
-    const gap = window.innerWidth < 760 ? 64 : 48;
-    const drift = (ts * .012 + window.scrollY * .06) % gap;
-    ctx.save();
-    ctx.globalAlpha = .13;
-    ctx.strokeStyle = 'rgba(255,77,0,.45)';
-    ctx.lineWidth = 1;
-    for(let x = -gap + drift; x < window.innerWidth + gap; x += gap){
-      ctx.beginPath(); ctx.moveTo(Math.round(x) + .5, 0); ctx.lineTo(Math.round(x) + .5, window.innerHeight); ctx.stroke();
-    }
-    for(let y = -gap + drift; y < window.innerHeight + gap; y += gap){
-      ctx.beginPath(); ctx.moveTo(0, Math.round(y) + .5); ctx.lineTo(window.innerWidth, Math.round(y) + .5); ctx.stroke();
-    }
-    ctx.restore();
-  }
-
-  function drawStage(ts){
-    frameId = 0;
-    if(!ctx) return;
-    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    drawGrid(ts || 0);
-
-    for(let i = 0; i < particles.length; i++){
-      const p = particles[i];
-      if(!reduceMotion){
-        p.x += p.vx;
-        p.y += p.vy;
-        if(p.x < -12) p.x = window.innerWidth + 12;
-        if(p.x > window.innerWidth + 12) p.x = -12;
-        if(p.y < -12) p.y = window.innerHeight + 12;
-        if(p.y > window.innerHeight + 12) p.y = -12;
-        if(pointer.active){
-          const dx = pointer.x - p.x;
-          const dy = pointer.y - p.y;
-          const dist = Math.hypot(dx, dy);
-          if(dist < 180 && dist > 1){
-            const pull = (1 - dist / 180) * .45;
-            p.x -= (dx / dist) * pull;
-            p.y -= (dy / dist) * pull;
-          }
-        }
-      }
-      const pulse = Math.sin((ts || 0) * .003 + p.phase) * .8;
-      ctx.fillStyle = i % 5 === 0 ? 'rgba(245,240,232,.42)' : 'rgba(255,77,0,.68)';
-      ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size + Math.max(0, pulse), p.size + Math.max(0, pulse));
+    function makeParticles(){
+      const area = window.innerWidth * window.innerHeight;
+      const total = Math.max(34, Math.min(92, Math.round(area / 22000)));
+      particles = Array.from({length: total}, (_, i) => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        vx: (Math.random() - .5) * .22,
+        vy: (Math.random() - .5) * .18,
+        size: i % 7 === 0 ? 3 : 2,
+        phase: Math.random() * Math.PI * 2
+      }));
     }
 
-    ctx.save();
-    ctx.lineWidth = 1;
-    for(let a = 0; a < particles.length; a++){
-      for(let b = a + 1; b < particles.length; b++){
-        const pa = particles[a], pb = particles[b];
-        const dx = pa.x - pb.x, dy = pa.y - pb.y;
-        const dist = Math.hypot(dx, dy);
-        if(dist < 128){
-          ctx.globalAlpha = (1 - dist / 128) * .19;
-          ctx.strokeStyle = 'rgba(255,114,38,.85)';
-          ctx.beginPath(); ctx.moveTo(pa.x + 1, pa.y + 1); ctx.lineTo(pb.x + 1, pb.y + 1); ctx.stroke();
-        }
-      }
+    function resizeCanvas(){
+      if(!ctx) return;
+      dpr = Math.min(window.devicePixelRatio || 1, 1.75);
+      canvas.width = Math.floor(window.innerWidth * dpr);
+      canvas.height = Math.floor(window.innerHeight * dpr);
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      makeParticles();
+      if(reduceMotion) drawStage(0);
     }
-    ctx.restore();
 
-    if(pointer.active){
+    function drawGrid(ts){
+      const gap = window.innerWidth < 760 ? 64 : 48;
+      const drift = (ts * .012 + window.scrollY * .06) % gap;
       ctx.save();
-      ctx.globalAlpha = .25;
-      ctx.strokeStyle = 'rgba(255,77,0,.95)';
+      ctx.globalAlpha = .13;
+      ctx.strokeStyle = 'rgba(255,77,0,.45)';
       ctx.lineWidth = 1;
-      const s = 24 + Math.sin((ts || 0) * .006) * 5;
-      ctx.strokeRect(Math.round(pointer.x - s / 2) + .5, Math.round(pointer.y - s / 2) + .5, s, s);
+      for(let x = -gap + drift; x < window.innerWidth + gap; x += gap){
+        ctx.beginPath(); ctx.moveTo(Math.round(x) + .5, 0); ctx.lineTo(Math.round(x) + .5, window.innerHeight); ctx.stroke();
+      }
+      for(let y = -gap + drift; y < window.innerHeight + gap; y += gap){
+        ctx.beginPath(); ctx.moveTo(0, Math.round(y) + .5); ctx.lineTo(window.innerWidth, Math.round(y) + .5); ctx.stroke();
+      }
       ctx.restore();
     }
 
-    if(!reduceMotion && !document.hidden) frameId = requestAnimationFrame(drawStage);
+    function drawStage(ts){
+      frameId = 0;
+      if(!ctx) return;
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      drawGrid(ts || 0);
+
+      for(let i = 0; i < particles.length; i++){
+        const p = particles[i];
+        if(!reduceMotion){
+          p.x += p.vx;
+          p.y += p.vy;
+          if(p.x < -12) p.x = window.innerWidth + 12;
+          if(p.x > window.innerWidth + 12) p.x = -12;
+          if(p.y < -12) p.y = window.innerHeight + 12;
+          if(p.y > window.innerHeight + 12) p.y = -12;
+          if(pointer.active){
+            const dx = pointer.x - p.x;
+            const dy = pointer.y - p.y;
+            const dist = Math.hypot(dx, dy);
+            if(dist < 180 && dist > 1){
+              const pull = (1 - dist / 180) * .45;
+              p.x -= (dx / dist) * pull;
+              p.y -= (dy / dist) * pull;
+            }
+          }
+        }
+        const pulse = Math.sin((ts || 0) * .003 + p.phase) * .8;
+        ctx.fillStyle = i % 5 === 0 ? 'rgba(245,240,232,.42)' : 'rgba(255,77,0,.68)';
+        ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size + Math.max(0, pulse), p.size + Math.max(0, pulse));
+      }
+
+      ctx.save();
+      ctx.lineWidth = 1;
+      for(let a = 0; a < particles.length; a++){
+        for(let b = a + 1; b < particles.length; b++){
+          const pa = particles[a], pb = particles[b];
+          const dx = pa.x - pb.x, dy = pa.y - pb.y;
+          const dist = Math.hypot(dx, dy);
+          if(dist < 128){
+            ctx.globalAlpha = (1 - dist / 128) * .19;
+            ctx.strokeStyle = 'rgba(255,114,38,.85)';
+            ctx.beginPath(); ctx.moveTo(pa.x + 1, pa.y + 1); ctx.lineTo(pb.x + 1, pb.y + 1); ctx.stroke();
+          }
+        }
+      }
+      ctx.restore();
+
+      if(pointer.active){
+        ctx.save();
+        ctx.globalAlpha = .25;
+        ctx.strokeStyle = 'rgba(255,77,0,.95)';
+        ctx.lineWidth = 1;
+        const s = 24 + Math.sin((ts || 0) * .006) * 5;
+        ctx.strokeRect(Math.round(pointer.x - s / 2) + .5, Math.round(pointer.y - s / 2) + .5, s, s);
+        ctx.restore();
+      }
+
+      if(!reduceMotion && !document.hidden) frameId = requestAnimationFrame(drawStage);
+    }
+
+    if(ctx){
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas, {passive:true});
+      window.addEventListener('pointermove', e => { pointer.x = e.clientX; pointer.y = e.clientY; pointer.active = true; }, {passive:true});
+      window.addEventListener('pointerleave', () => { pointer.active = false; }, {passive:true});
+      if(!reduceMotion) frameId = requestAnimationFrame(drawStage);
+      document.addEventListener('visibilitychange', () => {
+        if(!document.hidden && !reduceMotion && !frameId) frameId = requestAnimationFrame(drawStage);
+      });
+    }
   }
 
-  if(ctx){
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas, {passive:true});
-    window.addEventListener('pointermove', e => { pointer.x = e.clientX; pointer.y = e.clientY; pointer.active = true; }, {passive:true});
-    window.addEventListener('pointerleave', () => { pointer.active = false; }, {passive:true});
-    if(!reduceMotion) frameId = requestAnimationFrame(drawStage);
-    document.addEventListener('visibilitychange', () => {
-      if(!document.hidden && !reduceMotion && !frameId) frameId = requestAnimationFrame(drawStage);
-    });
-  }
+  mountCanvasFallback();
 
   const tiltTargets = document.querySelectorAll('.frost,.svc-card:not(.svc-face),.case-card,.pkg-card,.team-card,.signal-card,.process-step,.stat-box,.about-panel,.value');
   tiltTargets.forEach(el => {
