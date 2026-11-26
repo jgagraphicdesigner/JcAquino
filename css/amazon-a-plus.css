@@ -81,6 +81,35 @@
   margin-top: 5px;
 }
 
+.a-plus-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  margin-top: 12px;
+  padding: 9px 12px;
+  border: 1px solid var(--orange-border);
+  border-radius: 6px;
+  background: var(--orange-dim);
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-plus-live-link:hover {
+  border-color: var(--orange);
+  background: var(--frost-hover);
+}
+
+.a-plus-live-link:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
+}
+
 .a-plus-controls {
   display: flex;
   align-items: center;
